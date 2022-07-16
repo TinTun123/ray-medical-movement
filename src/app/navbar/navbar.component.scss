@@ -1,0 +1,167 @@
+.navbaro {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: white;
+    box-shadow: 0px 0.5px 11px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2000;
+
+
+    li {
+        
+        width: 200px;
+        height: 70px;
+        opacity: 0.9;
+        line-height: 70px;
+        text-align: center;
+        display: block;
+        
+        
+
+        a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            height: 100%;
+            text-align: center;
+
+            img {
+                
+                display: block;
+                width: 50%;
+                height: 50%;
+                margin: auto;
+            }
+        }
+
+        a:hover {
+           
+            opacity: 1;
+        }
+    }
+
+
+    li.nav-logo a {
+        width: 70%;
+        margin: auto;
+         img {
+             
+             display: block;
+             width: 50%;
+             height: 100%;
+             filter: invert(43%) sepia(88%) saturate(2034%) hue-rotate(164deg) brightness(98%) contrast(101%);
+             border-radius: 70px;
+             padding: 4px;
+         }
+    }
+
+    li.donate a {
+        border-left: 0.5px solid black;
+        opacity: 1;
+        color: black;
+    }
+
+    li.toggle {
+        display: none;
+    }
+
+
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+        .navbaro {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            max-height: 6em;
+            width: 100%;
+            transition: max-height 0.2s;
+            background-color: white;
+
+            li {
+                width: 90%;
+                height: 40%;
+                margin: auto;
+                
+                a {
+                    text-align: left;
+                    padding-left: 10px;
+                    opacity: 0.7;
+                    border-bottom: 0.5px solid black;
+                    padding: 21px 7px 21px 7px;
+                    color: black;
+
+                    img {
+                        display: block;
+                        margin: 0;
+                    }
+                    
+                }
+
+
+                a:hover {
+                    opacity: 1;
+                  
+                }
+
+            }
+
+            li:first-child a {
+                border: none;
+            }
+
+            li.toggle {
+                display: block;
+                position: absolute;
+               width: 50px;
+                height: 60px;
+                line-height: 60px;
+                
+                top: 20px;
+                right: 0;
+                color: blue;
+                opacity: 0.7;
+                transition: transform 0.5s;
+                font-size: x-large;
+            }
+            
+
+            li.donate {
+                display: none;
+            }
+
+
+            li.toggle.click {
+                opacity: 1;
+                transform: rotate(90deg);
+            }
+
+            li.nav-logo a:hover {
+                border-bottom: none;
+            }
+
+
+            li.nav-logo a {
+                margin-left: 0;
+
+                img {
+                    display: block;
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+
+
+            
+        }
+        .navbaro.click {
+            max-height: 50em;
+        }
+
+}
