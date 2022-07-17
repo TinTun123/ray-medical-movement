@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import { faMinus } from '@fortawesome/free-solid-svg-icons';
+// import { faPlus } from '@fortawesome/free-solid-svg-icons'
+// import { faMinus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -9,8 +9,9 @@ import { faMinus } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavbarComponent implements OnInit {
   
-  faplus = faPlus;
-  faminus = faMinus;
+  
+  // faplus = faPlus;
+  // faminus = faMinus;
   toggl : Boolean = false;
 
   constructor() { }

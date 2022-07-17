@@ -4,19 +4,20 @@
         <a routerLink=""><img src="../../assets/image/logo1.svg" height="10" width="10" alt=""></a>
         
     </li>
+    <li class="whoweare">
+        <a routerLink="/whoweare">Who we are</a>
+    </li>
     <li class="action">
         <a routerLink="/sorry">Action</a>
     </li>
     <li class="media">
         <a routerLink="/sorry">media</a>
     </li>
-    <li class="whoweare">
-        <a routerLink="/sorry">Who we are</a>
-    </li>
+
     <li class="donate">
         <a routerLink="/sorry">Donate</a>
     </li>
     <li class="toggle"  [class.click]="toggl">
-        <fa-icon (click)="toggle()" class="plus" [icon]="faplus"></fa-icon>
+        <fa-icon (click)="toggle()" class="plus" [icon]="['fas', 'plus']"></fa-icon>
     </li>
 </ul>

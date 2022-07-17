@@ -11,6 +11,11 @@ import { CardListComponent } from './card-list/card-list.component';
 import { SorryComponent } from './sorry/sorry.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faPhoneSquare, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { WhoweareComponent } from './whoweare/whoweare.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ActionComponent } from './action/action.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +26,24 @@ import { FooterComponent } from './footer/footer.component';
     SorryComponent,
     HomeComponent,
     FooterComponent,
+    WhoweareComponent,
+    ActionComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(library : FaIconLibrary) {
+    library.addIcons(
+      faPlus,
+      faPhoneSquare,
+      )
+  }
+ }
