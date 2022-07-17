@@ -9,7 +9,9 @@
         "@schematics/angular:application": {
           "strict": true
         },
-        "@schematics/angular:component": { "style": "scss" } 
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
       },
       "root": "",
       "sourceRoot": "src",
@@ -30,7 +32,6 @@
             "styles": [
               "src/styles.scss",
               "./bower_components/bootstrap/dist/css/bootstrap.min.css"
-          
             ],
             "scripts": []
           },
@@ -100,6 +101,14 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/ray-medical",
+            "netlifyToken": "",
+            "siteId": "53df7301-288c-49f1-95e3-72cfecd39863"
           }
         }
       }
