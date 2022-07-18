@@ -1,23 +1,32 @@
 <ul class="navbaro" [class.click]="toggl">
     
     <li class="nav-logo">
-        <a routerLink=""><img src="../../assets/image/logoresize.png" height="10" width="10" alt=""></a>
+        <a routerLink=""><img src="../../assets/image/logo1.svg" height="10" width="10" alt=""></a>
         
     </li>
-    <li class="whoweare">
+    <li (click)="toggle()" class="whoweare">
         <a routerLink="/whoweare">Who we are</a>
     </li>
     <li class="action">
         
-        <a (click)="drop_method()">Action <fa-icon class="plus" [icon]="['fas', 'arrow-down']"></fa-icon></a>
-        <ul class="drop" *ngIf="drop"> 
-            <li>Training and medical supply project</li>
-            <li routerLink="/surgical">Forward Surgical Team / Mobile surgical team</li>
-            <li>Primary Health Care to IDPs & civilians</li>
+        <a (click)="drop_method()">Action <fa-icon [icon]="['fas', 'angle-down']"></fa-icon></a>
+        <ul class="action_ul" [class.action_drop]="drop"> 
+            <li (click)="toggle()">Training and medical supply project</li>
+            <li (click)="toggle()" routerLink="/surgical">Forward Surgical Team / Mobile surgical team</li>
+            <li (click)="toggle()">Primary Health Care to IDPs & civilians</li>
         </ul>
     </li>
-    <li class="media">
-        <a routerLink="/sorry">media</a>
+    <li (click)="toggle()" class="media">
+        <a  routerLink="/sorry">media</a>
+    </li>
+
+    <li class="language">
+        <a (click)="language_toggle()">Language <fa-icon [icon]="['fas', 'angle-down']"></fa-icon></a>
+            <ul [class.language_toggle]="language_drop">
+                <li (click)="change_lan('mm')">Myanmar <span><img src="../../assets/image/mm.svg" alt=""></span></li>
+                <li (click)="change_lan('mu')">MuYeeCa <span><img src="../../assets/image/us.svg" alt=""></span></li>
+            </ul>
+        
     </li>
 
     <li class="donate">

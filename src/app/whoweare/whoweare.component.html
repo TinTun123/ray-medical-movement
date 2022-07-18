@@ -1,28 +1,27 @@
 <div class="whoweare">
     <div class="vision">
         <h2>Vision</h2>
-        <p>“From the medical movement  towards the better health care system  and  save lives” </p>
+        <p [class.mm]="language === 'mm'">{{language === "mu" ? para01[0] : para01[1]}} </p>
     </div>
 
     <div class="mission">
         <h2>Mission</h2>
-        <p>From the evolution of healthcare systems to the healthier environment lessen from pain and suffering. 2. As good health system leads us to live healthily, our movements are willing to make a turning point for better health systems. 3. To prevent untimely deaths and reduce the complications following trauma and diseases. </p>
+        <p [class.mm]="language === 'mm'">{{language === "mu" ? para02[0] : para02[1]}}</p>
     </div>
 
     <div class="objective">
         <h2>Objective</h2>
         <ul>
-            <li>Emergency life saving & first aid trainings, Evacuation from battle fields to decrease the decrease the death rate and lessen the complications of the trauma.</li>
-            <li>Emergency response to red cases</li>
-            <li>Timely Surgical Intervention for deadly injured patients</li>
-            <li>Elective Surgical procedures for those who might needed.</li>
+            <li *ngFor="let li of language === 'mu' ? para03mu : para03mm">
+                {{li}}
+            </li>
         </ul>
     </div>
 
     <div class="founding">
         <h2>Founding of Ray</h2>
-        <p>
-            Medical Movement  After the military coup on 1st February 2021, the people in Myanmar expressed non-violent protests. Nevertheless, the military junta used brutal control measures and violent crack down upon non-violent protestors. Traumatized patients can’t receive proper medical treatments. Medical professionals, facilities and patients came under attack. Some died and some had to flee away. Starting from March 28th, we started on-ground First-aid and emergency trauma care training to the civilians and protesters in Yangon so that they could manage trauma people around them to some extent. Later, we continue trainings in Kyeik Hto/ Mon State, Kayin State, Kayah/Karenni State and trained up to 1,277 people. 1. First-aid training and first-aid kits supply to 2002 people. 2. Medic training and medic backpack supply is 227. 3. Trauma refresher courses for doctor & nurses and supplementation of medical equipments to 20 people  from the help of donors.
+        <p [class.mm]="language === 'mm'">
+           {{language === "mu" ? para04[0] : para04[1]}}
         </p>
     </div>
 
@@ -46,16 +45,15 @@
 
 
     <div class="funding">
-        <p>
-            We mainly focus on first-aid and medic trainings for those who were going to the front line previously. Later,  most of the people come to have knowledge that emergency rescue training is vital though they weren't much interested in it at first. Number of the trainers, doctors and nurses for first-aid training has been increasing and
-            people are becoming more interested with better learning abilities. Systematic patient transport systems are found as well. But, some people can't reach to the hospital and they were dragged by the hands of death because of far distance from the incident place to hospital, prolonged duration of evacuation from the battle fields and severity of the trauma. Number of untimely death is unknown.  Thus, We, forward surgical team/ mobile surgical team, tried to fill the blank by doing resuscitations and timely surgical intervention hoping to rescue more people and safe others life starting from 1st January, 2022
+        <p [class.mm]="language === 'mm'">
+            {{language === "mu" ? para05[0] : para05[1]}}    
         </p>
     </div>
 
     <div class="projects">
         <h2>Our projects</h2>
 
-        <ul>
+        <ul *ngIf="language === 'mu'">
             <li>Training and medical supply project
                 <ul>
                     <li>First aid Training & First aid kits supply</li>
@@ -69,6 +67,23 @@
 
             <li>
                 Primary Health Care to IDPs & civilians
+            </li>
+        </ul>
+
+        <ul *ngIf="language === 'mm'">
+            <li>Training and medical supply project
+                <ul>
+                    <li>အရေးပေါ်အသက်ကယ်သင်တန်းများပေးခြင်းနှင့် အရေးပေါ်ဆေးအိတ်ထောက်ပံ့ခြင်း။</li>
+                    <li>တပ်ရင်းတပ်ဖွဲများတွင် ဆေးတပ်များပေါ်ပေါက်၍ အင်အားပိုမိုကောင်းမွန်လာစေရန် ဆေးတပ်သင်တန်းပေးခြင်းနှင့် ဆေးအိတ်များထောက်ပံ့ပေးခြင်း။</li>
+                    <li>ဆရာဝန်သူနာပြုတိုအတွက် ထိခိုက်ဒဏ်ရာပြန်လည်လေ့ကျင့်ခြင်းသင်တန်းနှင့် လိုအပ်သောဆေးပစ္စည်းများထောက်ပံ့ခြင်း။</li>
+                </ul>
+            </li>
+            <li>
+                ရှေ့တန်းခွဲစိတ်ကုသရေးအဖွဲ။
+            </li>
+
+            <li>
+                စစ်ဘေးရှောင်နှင့်ဒေသခံပြည်သူများကို အခြေခံကျန်းမာရေးစောင့်ရှောက်မှုပေးခြင်း။
             </li>
         </ul>
 

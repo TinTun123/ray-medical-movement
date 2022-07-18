@@ -2,11 +2,9 @@
     <div class="row justify-content-between">
         <div class="whoarewe col-12 col-md-5 mt-3">
             <h3>Who we are</h3>
-            <h5>Founding of RAY : Medical Movement </h5>
-            <p>
-                After the military coup on 1st February 2021, the people in Myanmar expressed non-violent protests. Nevertheless,
-                the military junta used brutal control measures and violent crack down upon non-violent protestors. Traumatized patients can’t receive proper medical treatments. 
-                 Medical professionals, facilities and patients came under attack. Some died and some had to flee away.
+            <h5>Founding of RAY : Medical Movement</h5>
+            <p [class.mm]="language === 'mm'">
+                {{language === "mu" ? para01[0] : para01[1]}}
             </p>
     
             <a class="btn btn-outline-info" routerLink="/whoweare">See more</a>
@@ -14,9 +12,9 @@
     
         <div class="action col-12 col-md-5 mt-3">
             <h3>Action</h3>
-            <p>
-                Ongoing projects 1. Training and medical supply project  (a) First aid Training & First aid kits supply  (b) Medic Training and medic back pack supply  (c) Trauma Refresher Courses for doctor and nurses & medical equipment supply 2. Forward Surgical Team/ Mobile surgical team project 3. Primary Health Care to IDPs & civilians</p>
-    
+            <p [class.mm]="language === 'mm'">
+                {{language === "mu" ? para02[0] : para02[1]}}
+            </p>
             <a class="btn btn-outline-info" routerLink="/sorry">See more</a>
         </div>
     </div>

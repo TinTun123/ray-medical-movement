@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from '../language.service';
 // import { faPlus } from '@fortawesome/free-solid-svg-icons'
 // import { faMinus } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,8 +15,9 @@ export class NavbarComponent implements OnInit {
   // faminus = faMinus;
   drop : Boolean = false;
   toggl : Boolean = false;
+  language_drop : Boolean = false;
 
-  constructor() { }
+  constructor(private language : LanguageService) { }
 
   ngOnInit(): void {
   }
@@ -25,7 +27,27 @@ export class NavbarComponent implements OnInit {
   }
 
   drop_method() : void {
+    if(this.language_drop) {
+      this.language_toggle();
+    }
+  
   this.drop = !this.drop;
+
+
+  }
+
+  language_toggle() : void {
+    if(this.drop) {
+      this.drop_method();
+    }
+    this.language_drop = !this.language_drop;
+  }
+
+  change_lan(lan : string) : void {
+    this.language_toggle();
+    this.language.change_lan(lan);
+   
+    
   }
 
 }

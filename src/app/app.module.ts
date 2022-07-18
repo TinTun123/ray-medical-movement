@@ -12,7 +12,7 @@ import { SorryComponent } from './sorry/sorry.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faPhoneSquare, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneSquare, faPlus, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { WhoweareComponent } from './whoweare/whoweare.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ActionComponent } from './action/action.component';
@@ -49,7 +49,8 @@ export class AppModule {
     library.addIcons(
       faPlus,
       faPhoneSquare,
-      faArrowDown
+      faArrowDown,
+      faAngleDown
       )
   }
  }

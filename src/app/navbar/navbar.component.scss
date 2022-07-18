@@ -72,19 +72,63 @@
     li.action {
         fa-icon {
             color: black;
-
+            margin-right: 40px;
         }
 
         
-        ul.drop {
+        ul.action_ul {
             width: 500px;
             background-color: white;
             z-index: 1000;
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height 0.1s ease-in-out;
             li {
                 width: 100%;
-                border-bottom: 1px solid blackng ;
+                border-bottom: 1px solid black;
+                text-align: left;
+               
             }
         }
+
+        ul.action_drop {
+            max-height: 200px;
+        }
+    }
+
+    li.language {
+        
+            fa-icon {
+                float: right;
+                margin-right: 90px;
+            }
+
+            ul {
+                background-color: white;
+                text-align: center;
+                padding: 0;
+                max-height: 0px;
+                overflow: hidden;
+                transition: max-height 0.1s ease-in-out;
+
+                li {
+                    border-bottom: 1px solid black;
+
+                    span {
+                        float: right;
+                        margin-right: 40px;
+                    }
+                }
+            }
+
+            ul.language_toggle {
+                max-height: 200px;
+            }
+        
+    }
+
+    li.language:hover {
+        cursor: pointer;
     }
 
     li.action:hover {
@@ -188,9 +232,27 @@
                         text-align: left;
                         font-size: 14px;
                         border-bottom: 1px solid black;
+                        
                     }
                 }
                 
+            }
+
+            li.language {
+                
+                    fa-icon {
+                        margin-right: 0;
+                    }
+
+                    ul {
+                        max-height: 0px;
+                        li {
+                            span {
+                                margin: 0;
+                            }
+                        }
+                    }
+            
             }
 
 

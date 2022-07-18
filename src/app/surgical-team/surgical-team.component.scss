@@ -2,6 +2,9 @@
     
     margin: 120px 1em 1em 1em;
     font-family: "PT Sans Pro", pt-sans-pro, "Sans Serif";
+    p.mm {
+        line-height: 30px;
+    }
     .experience {
         .training-img {
             
@@ -52,6 +55,9 @@
 
 @media only screen and (min-width: 600px) {
     .surgical {
+        // p.mm {
+        //     line-height: 30px;
+        // }
         .experience {
             .training-img {
                 background-color: rgba(0, 0, 0, 0.1);

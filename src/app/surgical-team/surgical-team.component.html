@@ -1,8 +1,8 @@
 <div class="surgical">
     <div class="about">
         <h1>Mobile / Forward Surgical team</h1>
-        <p>After being repeated attacks to surgical units, moving things here and there and modification of subcentre clinics and native houses into operation theatre became difficult. We tried to build OT in a place near front line but have to leave when the location was known and targetedly attacked. Feeling of insecureness made health care workers unsafe and moved to the places where the motar shellings are unreachable. But, thoses places are far enough from the incident places about 
-            1-2 hour drive and some even 3-4 hr drive. Considering the time of evacuation from battle field as 1 hr, life threatening injured patients are unable to get to the hospital and some even died on the way to hospital. Mobile surgical unit become the only solution for timely surgical interventions and save lives.
+        <p [class.mm]="language === 'mm'">
+            {{language === 'mu' ? para01[0] : para01[1]}}     
         </p>
     </div>
 
@@ -19,13 +19,14 @@
         <h1>Experiences of Forward Surgical Team </h1>
 
         <h2>History 1</h2>
-        <p>
-            On 30th December 2022 of Loikaw Milone battle, we chose a hospital named Nanmelkhone Hospital which is the closest to the battlefield so that we could save and help as far as we can. In that hospital we operated 24 cases during 2 weeks. Then, to avoid shelling of motors and air strike, doctors and nurses have to flee to a safer place.
+        <p [class.mm]="language === 'mm'">
+            {{language === 'mu' ? para02[0] : para02[1]}} 
         </p>
+        
 
         <h2>History 2</h2>
-        <p>
-            On16th February 2022, we modified a sub-centre clinic in Dawbuku into operation theatre where we made resuscitation and operation during Mobye battle. But, we have to move again due to the danger of repeated  air strike.
+        <p [class.mm]="language === 'mm'">
+            {{language === 'mu' ? para03[0] : para03[1]}} 
         </p>
 
         <div class="training-img container-fluid mt-4 mb-4">
@@ -33,7 +34,7 @@
     
                 <div class="content col-md-5 offset-md-1">
                     <p>
-                        "A house in Daw-Hlyar-Li (where we gave treatment in joint with KNDFB06 medical team) was burnt down by airstrike."
+                        {{language === 'mu' ? para04[0] : para04[1]}} 
                     </p>
                     
                 </div>
@@ -47,8 +48,8 @@
         </div>
 
         <h2>History 3</h2>
-        <p>
-            Thereafter, we tried to modify the sub-centre clinic into operation theatre again in another villages. But, most of the rural people daren’t accept because of the fear in them. Thus, we tried to make mobile tent-type operation theatre which is not that very far from the battle field because we need to expect the transportation time of less than 1 hour to save the red (emergency) cases. 
+        <p [class.mm]="language === 'mm'">
+            {{language === 'mu' ? para05[0] : para05[1]}} 
         </p>
 
         <div class="training-img container-fluid mt-4 mb-4">
@@ -59,8 +60,8 @@
                 </div>
 
                 <div class="content col-md-5">
-                    <p>
-                        "Doctor, nurses and patients running away due to motor shelling during surgical care  in Daw-Ngan-Khar"
+                    <p [class.mm]="language === 'mm'">
+                        {{language === 'mu' ? para06[0] : para06[1]}}
                     </p>
                 </div>
     
@@ -69,20 +70,20 @@
         </div>
 
 
-        <p>
-            Before our dreams were come true with low budget and transportation blockages from the military junta, we arranged a house in yellow zone where we could make life-saving surgical interventions for deadly injured patients. We gave rapid surgical airway of the neck injury patients, on-ground chest tube insertion to deadly chest injury patient whose oxygen saturation is undetectable due to haemopneumo thorax. No loss of patient on our hands and all of them get complete recovery after discharge form hospital but sadly is amputated patients. They get their lives back but not their limbs.
+        <p [class.mm]="language === 'mm'">
+            {{language === 'mu' ? para07[0] : para07[1]}}
         </p>
 
         <div class="training-img container-fluid mt-4 mb-4">
             <div class="row">
                 <div class="content col-md-5 offset-md-1">
                     <p>
-                        "Doctor, nurses and patients running away due to motor shelling during surgical care  in Daw-Ngan-Khar"
+                        On ground airway intervention for neck injury patient in Dó-Ngan-Khă
                     </p>
                 </div>
 
                 <div class="img col-md-5">
-                    <img src="../../assets/image/onground.jpg" alt="">
+                    <img src="../../assets/image/onground02.jpg" alt="">
                 </div>
 
 
