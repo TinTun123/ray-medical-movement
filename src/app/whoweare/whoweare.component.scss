@@ -3,7 +3,7 @@
     font-family: "PT Sans Pro", pt-sans-pro, "Sans Serif";
 
     .training-img {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.1);
         padding: 2em;
         // display: flex;
         // flex-direction: row;
@@ -18,7 +18,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            color: white;
+            color: black;
 
             p {
                 margin: 0;
@@ -37,6 +37,19 @@
                 height: 60%;
             }
 
+        }
+    }
+
+    .projects {
+        .img {
+            text-align: center;
+            width: 100%;
+
+            img {
+                display: block;
+                width: 70%;
+                margin: auto;
+            }
         }
     }
 }

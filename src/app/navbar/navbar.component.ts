@@ -12,6 +12,7 @@ export class NavbarComponent implements OnInit {
   
   // faplus = faPlus;
   // faminus = faMinus;
+  drop : Boolean = false;
   toggl : Boolean = false;
 
   constructor() { }
@@ -21,6 +22,10 @@ export class NavbarComponent implements OnInit {
 
   toggle() : void {
     this.toggl = !this.toggl
+  }
+
+  drop_method() : void {
+  this.drop = !this.drop;
   }
 
 }

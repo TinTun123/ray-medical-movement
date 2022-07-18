@@ -16,6 +16,9 @@ import { faPhoneSquare, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { WhoweareComponent } from './whoweare/whoweare.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ActionComponent } from './action/action.component';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons/faArrowDown';
+import { SurgicalTeamComponent } from './surgical-team/surgical-team.component';
+import { TrainingComponent } from './training/training.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,8 @@ import { ActionComponent } from './action/action.component';
     FooterComponent,
     WhoweareComponent,
     ActionComponent,
+    SurgicalTeamComponent,
+    TrainingComponent,
     
   ],
   imports: [
@@ -44,6 +49,7 @@ export class AppModule {
     library.addIcons(
       faPlus,
       faPhoneSquare,
+      faArrowDown
       )
   }
  }
