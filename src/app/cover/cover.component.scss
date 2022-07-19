@@ -1,6 +1,7 @@
 .cover {
     // position: relative;
     width: 100%;
+    margin-top: 97px;
 
     .img img{
         width: 100%;
@@ -32,6 +33,7 @@
 
 @media only screen and (min-width: 600px) {
     .cover {
+        margin-top: 72px;
         .img {
             img {
                 height: 600px;

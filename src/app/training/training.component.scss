@@ -1,0 +1,13 @@
+.training {
+    margin: 1em;
+    margin-top: 90px;
+    p.mm {
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .training {
+        margin-top: 120px;
+    }
+}

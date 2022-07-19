@@ -1,0 +1,30 @@
+.media {
+    margin-top: 72px;
+    div.content {
+        font-family: "PT Sans Pro", pt-sans-pro, "Sans Serif";
+        p {
+            text-indent: 60px;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    div.poem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        pre {
+            line-height: 35px;
+            font-size: 20px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 600px)  {
+    .media {
+        margin-top: 97px;
+    }
+}

@@ -1,0 +1,27 @@
+<div class="training">
+    <div class="vision">
+        <h3>Vision</h3>
+
+        <p [class.mm]="language === 'mm'">{{language === 'mu' ? para01[0] : para01[1]}}</p>
+    </div>
+
+    <div class="mission">
+        <h3>Mission</h3>
+        <p [class.mm]="language === 'mm'">{{language === 'mu' ? para02[0] : para02[1]}}</p>
+    </div>
+
+    <div class="objective">
+        <h2>Objective</h2>
+        <ul>
+            <li *ngFor="let li of language === 'mu' ? para03mu : para03mm">
+                {{li}}
+            </li>
+        </ul>
+    </div>
+
+    <div class="introduction">
+        <h3>Introduction</h3>
+
+        <p [class.mm]="language === 'mm'">{{language === 'mu' ? para04[0] : para04[1]}}</p>
+    </div>
+</div>
