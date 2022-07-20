@@ -182,7 +182,7 @@
             li.toggle {
                 display: block;
                 position: absolute;
-               width: 50px;
+                width: 50px;
                 height: 60px;
                 line-height: 60px;
                 
@@ -196,7 +196,12 @@
             
 
             li.donate {
-                display: none;
+                // display: none;
+                a {
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid black;
+                }
             }
 
 

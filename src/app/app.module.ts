@@ -20,6 +20,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons/faArrowDown';
 import { SurgicalTeamComponent } from './surgical-team/surgical-team.component';
 import { TrainingComponent } from './training/training.component';
 import { MediaComponent } from './media/media.component';
+import { DonateComponent } from './donate/donate.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { MediaComponent } from './media/media.component';
     SurgicalTeamComponent,
     TrainingComponent,
     MediaComponent,
+    DonateComponent,
     
   ],
   imports: [

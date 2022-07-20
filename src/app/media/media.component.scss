@@ -1,9 +1,11 @@
 .media {
-    margin-top: 72px;
+    margin-top: 115px;
+    font-size: 14px;
     div.content {
         font-family: "PT Sans Pro", pt-sans-pro, "Sans Serif";
         p {
             text-indent: 60px;
+            line-height: 27px;
             a {
                 text-decoration: none;
             }
@@ -17,14 +19,31 @@
         
         pre {
             line-height: 35px;
-            font-size: 20px;
+            font-size: 14px;
         }
+    }
+
+    
+    
+    // div.fb1 {
+    //     height: 350px;
+    // }
+    
+
+    iframe {
+        width: 100%;
     }
 }
 
 
 @media only screen and (min-width: 600px)  {
     .media {
-        margin-top: 97px;
+        margin-top: 115px;
+
+        div.content {
+            p {
+                font-size: 16px;
+            }
+        }
     }
 }

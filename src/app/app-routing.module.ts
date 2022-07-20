@@ -5,7 +5,8 @@ import { SorryComponent } from './sorry/sorry.component';
 import { SurgicalTeamComponent } from './surgical-team/surgical-team.component';
 import { TrainingComponent } from './training/training.component';
 import { WhoweareComponent } from './whoweare/whoweare.component';
-import { MediaComponent } from './media/media.component'
+import { MediaComponent } from './media/media.component';
+import { DonateComponent } from './donate/donate.component';
 
 const routes: Routes = [
   {path: "sorry", component: SorryComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: "surgical", component : SurgicalTeamComponent},
   {path: "training", component : TrainingComponent},
   {path: "media", component : MediaComponent},
+  {path: "donate", component : DonateComponent},
   {path : "", redirectTo : "/home", pathMatch : 'full'}
 ];
 
