@@ -1,14 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { LanguageService } from '../language.service';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-surgical-team',
   templateUrl: './surgical-team.component.html',
-  styleUrls: ['./surgical-team.component.scss']
+  styleUrls: ['./surgical-team.component.scss'],
+  providers : [NgbCarouselConfig]
 })
 export class SurgicalTeamComponent implements OnInit {
 
-  constructor(private languageService : LanguageService) { }
+  constructor(private languageService : LanguageService, config : NgbCarouselConfig) {  
+    config.interval = 3000;
+    config.wrap = true;
+    config.keyboard = false;
+    config.pauseOnHover = true;
+   }
 
   language : string = 'mu';
   para01 : string[] = [
@@ -79,6 +86,49 @@ export class SurgicalTeamComponent implements OnInit {
     `"Intra operation for deadly abdominal injured patient"`,
     `"သေနိုင်လောက်သော ဝမ်းဗိုက်ဒဏ်ရာလူနာကို ဆရာဝန်နှစ်ဦးပေါင်း၍ ခွဲစိတ်နေစဥ်"`
   ]
+
+  imgcont : string [] = [
+    `Intra operation for neck injured patient`,
+    `လည်ပင်းထိသောလူနာအား ခွဲစိတ်ပေးနေစဥ်`
+  ]
+
+  imgcont02 : string[] = [
+    `Interior design of tent-type operation theatre`,
+    `တဲဖြင့်ပြုလုပ်သောခွဲခန်းအတွင်းဘက်မြင်ကွင်း`
+  ]
+
+  imgcont03 : string[] = [
+    `Night time of a drug stock as part of operation theatre in the jungle`,
+    `ညဘက်ခွဲခန်းအပြီး တောတွင်းခွဲခန်းရှိဆေးစတိုမြင်ကွင်း`
+  ]
+
+  imgcont04 : string[] = [
+    `Pre-operative preparation for surgical case`,
+    `ခွဲစိတ်ရန်ပစ္စည်းများပြင်ဆင်နေစဉ်`
+  ]
+
+  imgcont05 : string [] = [
+    `During operation for amputated patiend due to land mine injury`,
+    `မိုင်းနင်းမိ၍ခြေထောက်ပြတ်သောလူနာအားခွဲစိတ်ပေးနေစဉ်`
+  ]
+
+  imgcont06 : string [] = [
+    `Minor operation for Lipoma excision`,
+    `အဆီကျိတ်လူနာအား အသေးစားခွဲစိတ်မှုပြုလုပ်နေစဉ်`
+  ]
+
+  imgcont07 : string [] = [
+    `Changing room & hand washing basin inside the mobile car-type operation theatre`,
+    `ကားဖြင့်ပြုလုပ်သောရွေ့လျားခွဲခန်း အပြင်ရှိ အဝတ်လဲခန်းနှင့် လက်ဆေးဘေစင်`
+  ]
+
+  imgcont08 : string[] = [
+    `Mobile car-type operation theatre interior design`,
+    `ကားဖြင့်ပြုလုပ်သောရွေ့လျားခွဲခန်းအတွင်းဘက်မြင်ကွင်း`
+  ]
+
+  images = ['car-type01', 'car-type02', 'tent-type02'].map(n => `../../assets/image/${n}.jpg`);
+
 
   ngOnInit(): void {
     this.languageService.subject.subscribe((res : any) => this.change_lan(res));

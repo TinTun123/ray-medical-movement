@@ -1,3 +1,43 @@
+<div class="cover">
+    <!-- <div class="content">
+        <h3>Forward Surgical Team</h3>
+    </div> -->
+    <div class="imgcarousel">
+        <!-- <img src="../../assets/image/photo_2022-07-16_16-28-43.jpg" alt=""> -->
+        <ngb-carousel *ngIf="images">
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[0]" alt="Random first slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>Forward Surgical Team</h3>
+                <p></p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[1]" alt="Random second slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>First aid training</h3>
+                <p></p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[2]"  alt="Random third slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>Basic Trauma Care Training</h3>
+                <p></p>
+              </div>
+            </ng-template>
+          </ngb-carousel>
+    </div>
+
+    
+</div>
+
 <div class="surgical">
     <div class="about">
         <h3>{{language === 'mu' ? h1[0] : h1[1]}}</h3>
@@ -110,14 +150,14 @@
     
         </div>
     </div>
-    <h3>Tent tpye operation</h3>
+    <h3>Mobile Tent type operation Theatre</h3>
     
         <div class="container-fluid tent-type mt-4 p-4">
 
             <div class="row">
                 <div class="img1 col-12 mb-4 col-md-4 p-md-3">
                     <div class="content">
-                        <p>Intra operation for neck injured patient 
+                        <p>{{language === 'mu' ? imgcont[0] : imgcont[1]}}
                             <a href="/#" class="btn btn-outline-light">See more</a>
                         </p>
                         
@@ -132,7 +172,7 @@
                 <div class="img1 col-12 mb-4 col-md-4 p-md-3">
                     <div class="content">
                         <p>
-                            Pre-operative preparation for sirgical case
+                            {{language === 'mu' ? imgcont02[0] : imgcont02[1]}}
                             <a href="/#" class="btn btn-outline-light">See more</a>
                         </p>
                     </div>
@@ -148,7 +188,7 @@
                 
                     <div class="content">
                         <p>
-                            Interior design of tent-type operation theatre
+                            {{language === 'mu' ? imgcont03[0] : imgcont03[1]}}
                             <a href="/#" class="btn btn-outline-light">See more</a>
                         </p>
                     </div>
@@ -161,16 +201,79 @@
                 <div class="img1 col-12 mb-4 col-md-4 p-md-3">
                     <div class="content">
                         <p>
-                            Night time of a drug stock as part of operation theatre in the jungle
+                            {{language === 'mu' ? imgcont04[0] : imgcont04[1]}}
                             <a href="/#" class="btn btn-outline-light">See more</a>
                         </p>
                     </div>
     
                     <div class="img">
-                        <img src="../../assets/image/text-type02.jpg" alt="">
+                        <img src="../../assets/image/tent-type02.jpg" alt="">
                     </div>
                 </div>
             </div>
 
     </div>
+
+    <h3>Mobile car-type Operation theatre</h3>
+
+    <div class="container-fluid tent-type mt-4 p-4">
+
+        <div class="row">
+            <div class="img1 col-12 mb-4 col-md-4 p-md-3">
+                <div class="content">
+                    <p>
+                        {{language === 'mu' ? imgcont05[0] : imgcont05[1]}}
+                        <a href="/#" class="btn btn-outline-light">See more</a>
+                    </p>
+                </div>
+
+                <div class="img">
+                    <img src="../../assets/image/car-type02.jpg" alt="">
+                </div>
+            </div>
+
+       
+
+            <div class="img1 col-12 mb-4 col-md-4 p-md-3">
+            
+                <div class="content">
+                    <p>
+                        {{language === 'mu' ? imgcont06[0] : imgcont06[1]}}
+                        <a href="/#" class="btn btn-outline-light">See more</a>
+                    </p>
+                </div>
+
+                <div class="img">
+                    <img src="../../assets/image/car-type03.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="img1 col-12 mb-4 col-md-4 p-md-3">
+                <div class="content">
+                    <p>
+                        {{language === 'mu' ? imgcont07[0] : imgcont07[1]}}
+                        <a href="/#" class="btn btn-outline-light">See more</a>
+                    </p>
+                </div>
+
+                <div class="img">
+                    <img src="../../assets/image/car-type04.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="img1 col-12 mb-4 col-md-4 p-md-3">
+                <div class="content">
+                    <p>{{language === 'mu' ? imgcont08[0] : imgcont08[1]}}
+                        <a href="/#" class="btn btn-outline-light">See more</a>
+                    </p>
+                    
+                </div>
+
+                <div class="img">
+                    <img src="../../assets/image/car-type01.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+</div>
 </div>
