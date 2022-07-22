@@ -38,7 +38,7 @@ export class SurgicalTeamComponent implements OnInit {
 
   para06 : string[] = [
     `"Doctor, nurses and patients running away due to motor shelling during surgical care  in Daw-Ngan-Khar"`,
-    `KNDF B06 နှင့်ပေါင်း၍ ဆေးကုသမှုပေးခဲ့သောနေအိမ် လေယာဥ်ဖြင့်အပစ်ခံရသဖြင့် မီးလောင်ပြာကျသွားစဥ်`
+    `ဆေးကုသပေးနေစဥ်လက်နက်ကြီးကျ၍ဆရာဝန်၊ ဆရာမ၊ လူနာများထွက်ပြေးနေစဥ်`
   ]
 
   para07 : string[] = [
@@ -61,7 +61,23 @@ export class SurgicalTeamComponent implements OnInit {
 
   h1 : string[] = [
     `Mobile / Forward Surgical team`,
-    ``
+    `ရွေ့လျားခွဲစိတ်ကုသရေးအဖွဲ`
+  ]
+
+  h2 : string[] = [
+    `Experiences of Forward Surgical Team`,
+    `တိုက်ပွဲများအတွင်းအတွေ့အကြုံ`
+  ]
+
+  para09 : string[] = [
+    `"On ground airway intervention for neck injury patient in Dó-Ngan-Khă"`,
+    `"လည်ပင်းထိခိုက်သောလူနာအား အရေးပေါ်အသက်ကယ်စဥ် (ဒေါ့ငံခါး)"`
+  ]
+
+
+  para10 : string[] = [
+    `"Intra operation for deadly abdominal injured patient"`,
+    `"သေနိုင်လောက်သော ဝမ်းဗိုက်ဒဏ်ရာလူနာကို ဆရာဝန်နှစ်ဦးပေါင်း၍ ခွဲစိတ်နေစဥ်"`
   ]
 
   ngOnInit(): void {

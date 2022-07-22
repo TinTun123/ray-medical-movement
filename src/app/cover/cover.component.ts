@@ -9,7 +9,7 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap'
 })
 export class CoverComponent implements OnInit {
 
-  images = ['surgical', 'trainingresize', 'training', 'medic-training', 'preimaryhealth'].map(n => `../../assets/image/${n}.jpg`);
+  images = ['surgical_1_50', 'trainingresize', 'training', 'medic-training', 'preimaryhealth'].map(n => `../../assets/image/${n}.jpg`);
 
   constructor(config : NgbCarouselConfig) {
     config.interval = 3000;

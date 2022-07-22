@@ -1,6 +1,6 @@
 <div class="surgical">
     <div class="about">
-        <h3>Mobile / Forward Surgical team</h3>
+        <h3>{{language === 'mu' ? h1[0] : h1[1]}}</h3>
         <p [class.mm]="language === 'mm'">
             {{language === 'mu' ? para01[0] : para01[1]}}     
         </p>
@@ -16,7 +16,7 @@
     </div>
 
     <div class="experience">
-        <h3>Experiences of Forward Surgical Team </h3>
+        <h3>{{language === 'mu' ? h2[0] : h2[1]}}</h3>
 
         
         <p [class.mm]="language === 'mm'">
@@ -30,9 +30,9 @@
                     <img src="../../assets/image/operation.jpg" alt="">
                 </div>
 
-                <div class="content col-md-5 offset-md-1">
+                <div class="content col-md-5">
                     <p>
-                        "Content Paragraph"
+                        {{language === 'mu' ? para10[0] : para10[1]}} 
                     </p>
                     
                 </div>
@@ -96,7 +96,7 @@
             <div class="row">
                 <div class="content col-md-5 offset-md-1">
                     <p>
-                        "On ground airway intervention for neck injury patient in Dó-Ngan-Khă"
+                        {{language === 'mu' ? para09[0] : para09[1]}}
                     </p>
                 </div>
 
@@ -109,5 +109,68 @@
             </div>
     
         </div>
+    </div>
+    <h3>Tent tpye operation</h3>
+    
+        <div class="container-fluid tent-type mt-4 p-4">
+
+            <div class="row">
+                <div class="img1 col-12 mb-4 col-md-4 p-md-3">
+                    <div class="content">
+                        <p>Intra operation for neck injured patient 
+                            <a href="/#" class="btn btn-outline-light">See more</a>
+                        </p>
+                        
+                    </div>
+    
+                    <div class="img">
+                        <img src="../../assets/image/surgical.jpg" alt="">
+                    </div>
+                </div>
+            
+
+                <div class="img1 col-12 mb-4 col-md-4 p-md-3">
+                    <div class="content">
+                        <p>
+                            Pre-operative preparation for sirgical case
+                            <a href="/#" class="btn btn-outline-light">See more</a>
+                        </p>
+                    </div>
+    
+                    <div class="img">
+                        <img src="../../assets/image/tent-type03.jpg" alt="">
+                    </div>
+                </div>
+
+           
+
+                <div class="img1 col-12 mb-4 col-md-4 p-md-3">
+                
+                    <div class="content">
+                        <p>
+                            Interior design of tent-type operation theatre
+                            <a href="/#" class="btn btn-outline-light">See more</a>
+                        </p>
+                    </div>
+    
+                    <div class="img">
+                        <img src="../../assets/image/tent-type01.jpg" alt="">
+                    </div>
+                </div>
+    
+                <div class="img1 col-12 mb-4 col-md-4 p-md-3">
+                    <div class="content">
+                        <p>
+                            Night time of a drug stock as part of operation theatre in the jungle
+                            <a href="/#" class="btn btn-outline-light">See more</a>
+                        </p>
+                    </div>
+    
+                    <div class="img">
+                        <img src="../../assets/image/text-type02.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
     </div>
 </div>
