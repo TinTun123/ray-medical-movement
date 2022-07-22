@@ -45,7 +45,7 @@ export class SurgicalTeamComponent implements OnInit {
 
   para06 : string[] = [
     `"Doctor, nurses and patients running away due to motor shelling during surgical care  in Daw-Ngan-Khar"`,
-    `ဆေးကုသပေးနေစဥ်လက်နက်ကြီးကျ၍ဆရာဝန်၊ ဆရာမ၊ လူနာများထွက်ပြေးနေစဥ်`
+    ` ဆေးကုသပေးနေစဥ်လက်နက်ကြီးကျ၍ဆရာဝန်၊ ဆရာမ၊ လူနာများထွက်ပြေးနေစဥ်`
   ]
 
   para07 : string[] = [
@@ -127,7 +127,7 @@ export class SurgicalTeamComponent implements OnInit {
     `ကားဖြင့်ပြုလုပ်သောရွေ့လျားခွဲခန်းအတွင်းဘက်မြင်ကွင်း`
   ]
 
-  images = ['car-type01', 'car-type02', 'tent-type02'].map(n => `../../assets/image/${n}.jpg`);
+  images = ['car-type04', 'car-type02', 'tent-type01'].map(n => `../../assets/image/${n}.jpg`);
 
 
   ngOnInit(): void {
