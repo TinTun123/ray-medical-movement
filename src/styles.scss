@@ -2,7 +2,11 @@
 body {
     line-height: 1.66em;
     font-family: "PT Sans Pro", pt-sans-pro, "Sans Serif";
+    h1,h2,h3,h4,h5 {
+        font-weight: 600;
+    }
 }
+
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';

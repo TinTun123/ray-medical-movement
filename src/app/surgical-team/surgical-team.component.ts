@@ -38,13 +38,30 @@ export class SurgicalTeamComponent implements OnInit {
 
   para06 : string[] = [
     `"Doctor, nurses and patients running away due to motor shelling during surgical care  in Daw-Ngan-Khar"`,
-    `ဆေးကုသပေးနေစဥ်လက်နက်ကြီးကျ၍ဆရာဝန်၊ ဆရာမ၊ လူနာများထွက်ပြေးနေစဥ်`
+    `KNDF B06 နှင့်ပေါင်း၍ ဆေးကုသမှုပေးခဲ့သောနေအိမ် လေယာဥ်ဖြင့်အပစ်ခံရသဖြင့် မီးလောင်ပြာကျသွားစဥ်`
   ]
 
   para07 : string[] = [
     `Before our dreams were come true with low budget and transportation blockages from the military junta, we arranged a house in yellow zone where we could make life-saving surgical interventions for deadly injured patients. We gave rapid surgical airway of the neck injury patients, on-ground chest tube insertion to deadly chest injury patient whose oxygen saturation is undetectable due to haemopneumo thorax. No loss of patient on our hands and all of them get complete recovery after discharge form hospital but sadly is amputated patients. They get their lives back but not their limbs.`,
     `Mobile Tent Type တဲပုံစံ ပြင်ဆင်နေတဲ့အတောအတွင်းမှာပဲ တိုက်ပွဲပြင်းထန်နေတာကြောင့် ရှေ့တန်း (yellow zone) ထိ လိုက်ပါပြီး ဆေးကုသမူ ပေးခဲ့ပါသည်။ 
     ဒေါတော်ကူး၊ ဒေါငံခါး၊ အိုခူးရီ စတဲ့ တိုက်ပွဲဖြစ်တဲ့ နေရာတွေမှာ လိုက်ပါပြီး ထိခိုက်ဒဏ်ရာ လူနာတွေကို ဆေးကုသမူပေးခဲ့ပါသည်။ yellow zone မှာပဲ တွေ့ရာ အိမ်တစ်လုံးထဲမှာ ဝင်ပြီးဆေးကုသဖို နေရာပြင်ဆင်ဖန်တီးခဲ့ကြတယ်။ လေပြွန်ထိတဲ့လူနာတွေ ကိုအသက်ရူပိုက်ထည့်တာ၊ရင်ဘတ်ကျည်ထိတဲ့ လူနာတွေကို  ရင်ဘတ်ထဲ ပိုက်ထည့်တာ စတာတွေကို လုပ်ပေးခဲ့သည်။ ဒေါ့ငံခါးမှာဆေးကုတဲ့နေ့က လက်နက်ကြီးထိတဲ့လူနာ ၄ယောက်ကျော်ရောက်လာပြီး  ဆေးကုနေတဲ့အိမ်ပေါ်တည့်တည့် လက်နက်ကြီးကျတယ် ။ ၂ယောက်ထပ်ထိတယ်။ အထိအခိုက်များသော နေ့များလည်းကြုံတွေ့ခဲ့ကြရပါသည်။`
+  ]
+
+  para08mu : string[] = [
+    `Emergency response to red cases`,
+    `Timely Surgical Intervention for deadly injured patients`,
+    `Elective Surgical procedures for those who might needed`
+  ]
+
+  para08mm : string[] = [
+    `အရေးပေါ်လူနာကိုအလျှင်မြန်ဆုံး ခွဲစိတ်ကုသမှုပေးနိုင်စေရန်။`,
+    `သေစေလောက်သောဒဏ်ရာများတွင် အချိန်မှီခွဲစိတ်ခြင်းဖြင့်အသက်ဆုံးရှုးမှုများကိုလျော့ချနိုင်စေရန်။`,
+    `စစ်အေးချိန်တွင် စစ်ရှောင်ပြည်သူနှင့်ဒေသခံများကို ခွဲစိတ်ကုသပေးနိုင်စေရန်။`
+  ]
+
+  h1 : string[] = [
+    `Mobile / Forward Surgical team`,
+    ``
   ]
 
   ngOnInit(): void {

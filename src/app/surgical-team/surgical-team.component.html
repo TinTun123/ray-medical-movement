@@ -8,28 +8,46 @@
 
     <div class="objective">
         <h3>Objectives</h3>
-        <ul>
-            <li>Emergency response to red cases</li>
-            <li>Timely Surgical Intervention for deadly injured patients</li>
-            <li>Elective Surgical procedures for those who might needed</li>
-        </ul>
+        <ol>
+            <li *ngFor="let li of language === 'mu' ? para08mu : para08mm">
+                {{li}}
+            </li>
+        </ol>
     </div>
 
     <div class="experience">
         <h3>Experiences of Forward Surgical Team </h3>
 
-        <h4>History 1</h4>
+        
         <p [class.mm]="language === 'mm'">
             {{language === 'mu' ? para02[0] : para02[1]}} 
         </p>
+
+        <div class="training-img container-fluid p-4 mt-4 mb-4">
+            <div class="row">
+    
+                <div class="img col-md-5 offset-md-1">
+                    <img src="../../assets/image/operation.jpg" alt="">
+                </div>
+
+                <div class="content col-md-5 offset-md-1">
+                    <p>
+                        "Content Paragraph"
+                    </p>
+                    
+                </div>
+
+            </div>
+    
+        </div>
         
 
-        <h4>History 2</h4>
+        
         <p [class.mm]="language === 'mm'">
             {{language === 'mu' ? para03[0] : para03[1]}} 
         </p>
 
-        <div class="training-img container-fluid mt-4 mb-4">
+        <div class="training-img container-fluid p-4 mt-4 mb-4">
             <div class="row">
     
                 <div class="content col-md-5 offset-md-1">
@@ -47,12 +65,12 @@
     
         </div>
 
-        <h2>History 3</h2>
+        
         <p [class.mm]="language === 'mm'">
             {{language === 'mu' ? para05[0] : para05[1]}} 
         </p>
 
-        <div class="training-img container-fluid mt-4 mb-4">
+        <div class="training-img container-fluid p-4 mt-4 mb-4">
             <div class="row">
 
                 <div class="img  offset-md-1 col-md-5">
@@ -74,7 +92,7 @@
             {{language === 'mu' ? para07[0] : para07[1]}}
         </p>
 
-        <div class="training-img container-fluid mt-4 mb-4">
+        <div class="training-img container-fluid p-4 mt-4 mb-4">
             <div class="row">
                 <div class="content col-md-5 offset-md-1">
                     <p>

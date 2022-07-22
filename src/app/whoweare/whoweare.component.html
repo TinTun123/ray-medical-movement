@@ -11,15 +11,16 @@
 
     <div class="objective">
         <h2>Objective</h2>
-        <ul>
+        
+        <ol>
             <li *ngFor="let li of language === 'mu' ? para03mu : para03mm">
                 {{li}}
             </li>
-        </ul>
+        </ol>
     </div>
 
     <div class="founding">
-        <h2>Founding of Ray</h2>
+        <h2>Founding of Ray Medical Movement</h2>
         <p [class.mm]="language === 'mm'">
            {{language === "mu" ? para04[0] : para04[1]}}
         </p>
@@ -53,13 +54,13 @@
     <div class="projects">
         <h2>Our projects</h2>
 
-        <ul *ngIf="language === 'mu'">
+        <ol *ngIf="language === 'mu'">
             <li>Training and medical supply project
-                <ul>
+                <ol>
                     <li>First aid Training & First aid kits supply</li>
                     <li>Medic Training and medic back pack supply </li>
                     <li>Trauma Refresher Courses for doctor and nurses & medical equipment supply</li>
-                </ul>
+                </ol>
             </li>
             <li>
                 Forward Surgical Team/ Mobile surgical team project
@@ -68,15 +69,15 @@
             <li>
                 Primary Health Care to IDPs & civilians
             </li>
-        </ul>
+        </ol>
 
-        <ul *ngIf="language === 'mm'">
+        <ol *ngIf="language === 'mm'">
             <li>Training and medical supply project
-                <ul>
+                <ol>
                     <li>အရေးပေါ်အသက်ကယ်သင်တန်းများပေးခြင်းနှင့် အရေးပေါ်ဆေးအိတ်ထောက်ပံ့ခြင်း။</li>
                     <li>တပ်ရင်းတပ်ဖွဲများတွင် ဆေးတပ်များပေါ်ပေါက်၍ အင်အားပိုမိုကောင်းမွန်လာစေရန် ဆေးတပ်သင်တန်းပေးခြင်းနှင့် ဆေးအိတ်များထောက်ပံ့ပေးခြင်း။</li>
                     <li>ဆရာဝန်သူနာပြုတိုအတွက် ထိခိုက်ဒဏ်ရာပြန်လည်လေ့ကျင့်ခြင်းသင်တန်းနှင့် လိုအပ်သောဆေးပစ္စည်းများထောက်ပံ့ခြင်း။</li>
-                </ul>
+                </ol>
             </li>
             <li>
                 ရှေ့တန်းခွဲစိတ်ကုသရေးအဖွဲ။
@@ -85,7 +86,7 @@
             <li>
                 စစ်ဘေးရှောင်နှင့်ဒေသခံပြည်သူများကို အခြေခံကျန်းမာရေးစောင့်ရှောက်မှုပေးခြင်း။
             </li>
-        </ul>
+        </ol>
 
         <div class="img">
             <img src="../../assets/image/teamchart.jpg" alt="">
