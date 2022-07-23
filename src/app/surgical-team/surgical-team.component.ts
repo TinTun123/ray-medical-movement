@@ -93,38 +93,38 @@ export class SurgicalTeamComponent implements OnInit {
   ]
 
   imgcont02 : string[] = [
-    `Interior design of tent-type operation theatre`,
-    `တဲဖြင့်ပြုလုပ်သောခွဲခန်းအတွင်းဘက်မြင်ကွင်း`
-  ]
-
-  imgcont03 : string[] = [
-    `Night time of a drug stock as part of operation theatre in the jungle`,
-    `ညဘက်ခွဲခန်းအပြီး တောတွင်းခွဲခန်းရှိဆေးစတိုမြင်ကွင်း`
-  ]
-
-  imgcont04 : string[] = [
     `Pre-operative preparation for surgical case`,
     `ခွဲစိတ်ရန်ပစ္စည်းများပြင်ဆင်နေစဉ်`
   ]
 
-  imgcont05 : string [] = [
-    `During operation for amputated patiend due to land mine injury`,
-    `မိုင်းနင်းမိ၍ခြေထောက်ပြတ်သောလူနာအားခွဲစိတ်ပေးနေစဉ်`
+  imgcont03 : string[] = [
+    `Interior design of tent-type operation theatre`,
+    `တဲဖြင့်ပြုလုပ်သောခွဲခန်းအတွင်းဘက်မြင်ကွင်းး`
   ]
 
-  imgcont06 : string [] = [
+  imgcont04 : string[] = [
+    `Night time of a drug stock as part of operation theatre in the jungle`,
+    `ညဘက်ခွဲခန်းအပြီး တောတွင်းခွဲခန်းရှိဆေးစတိုမြင်ကွင်း`
+  ]
+
+  imgcont05 : string [] = [
     `Minor operation for Lipoma excision`,
     `အဆီကျိတ်လူနာအား အသေးစားခွဲစိတ်မှုပြုလုပ်နေစဉ်`
   ]
 
-  imgcont07 : string [] = [
+  imgcont06 : string [] = [
     `Changing room & hand washing basin inside the mobile car-type operation theatre`,
     `ကားဖြင့်ပြုလုပ်သောရွေ့လျားခွဲခန်း အပြင်ရှိ အဝတ်လဲခန်းနှင့် လက်ဆေးဘေစင်`
   ]
 
-  imgcont08 : string[] = [
+  imgcont07 : string [] = [
     `Mobile car-type operation theatre interior design`,
     `ကားဖြင့်ပြုလုပ်သောရွေ့လျားခွဲခန်းအတွင်းဘက်မြင်ကွင်း`
+  ]
+
+  imgcont08 : string[] = [
+    `During operation for amputated patiend due to land mine injury`,
+    `မိုင်းနင်းမိ၍ခြေထောက်ပြတ်သောလူနာအားခွဲစိတ်ပေးနေစဉ်`
   ]
 
   images = ['car-type04', 'car-type02', 'tent-type01'].map(n => `../../assets/image/${n}.jpg`);
