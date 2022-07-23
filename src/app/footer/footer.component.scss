@@ -12,6 +12,25 @@ footer {
                 height: 100%;
                 padding: 0;
                 margin: 0;
+
+                li {
+                    color: white;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                    svg {
+                        display: inline-block;
+                        width: 10%;
+                        // height: 100%;
+                    }
+
+                    svg.email {
+                        width: 7%
+                    }
+                }
             }
         }
 
