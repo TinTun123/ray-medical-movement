@@ -16,6 +16,7 @@ export class NavbarComponent implements OnInit {
   drop : Boolean = false;
   toggl : Boolean = false;
   language_drop : Boolean = false;
+  surgical_drop : Boolean = false;
 
   constructor(private language : LanguageService) { }
 
@@ -48,6 +49,10 @@ export class NavbarComponent implements OnInit {
     this.language.change_lan(lan);
    
     
+  }
+
+  drop_surgical() {
+    this.surgical_drop = !this.surgical_drop;
   }
 
 }

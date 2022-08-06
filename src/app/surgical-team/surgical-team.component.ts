@@ -108,8 +108,8 @@ export class SurgicalTeamComponent implements OnInit {
   ]
 
   imgcont05 : string [] = [
-    `Minor operation for Lipoma excision`,
-    `အဆီကျိတ်လူနာအား အသေးစားခွဲစိတ်မှုပြုလုပ်နေစဉ်`
+    `Mobile car-type operation theatre`,
+    `Mobile car-type operation theatre`
   ]
 
   imgcont06 : string [] = [
@@ -118,8 +118,8 @@ export class SurgicalTeamComponent implements OnInit {
   ]
 
   imgcont07 : string [] = [
-    `Mobile car-type operation theatre interior design`,
-    `ကားဖြင့်ပြုလုပ်သောရွေ့လျားခွဲခန်းအတွင်းဘက်မြင်ကွင်း`
+    `Mobile car-type operation theatre`,
+    `Mobile car-type operation theatre`
   ]
 
   imgcont08 : string[] = [
@@ -127,7 +127,7 @@ export class SurgicalTeamComponent implements OnInit {
     `မိုင်းနင်းမိ၍ခြေထောက်ပြတ်သောလူနာအားခွဲစိတ်ပေးနေစဉ်`
   ]
 
-  images = ['car-type04', 'car-type02', 'tent-type01'].map(n => `../../assets/image/${n}.jpg`);
+  images = ['image0', 'image02', 'tent-type01', 'something01', 'something02'].map(n => `../../assets/image/${n}.jpg`);
 
 
   ngOnInit(): void {

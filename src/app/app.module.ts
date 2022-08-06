@@ -21,6 +21,8 @@ import { SurgicalTeamComponent } from './surgical-team/surgical-team.component';
 import { TrainingComponent } from './training/training.component';
 import { MediaComponent } from './media/media.component';
 import { DonateComponent } from './donate/donate.component';
+import { TentTypeComponent } from './tent-type/tent-type.component';
+import { CarTypeComponent } from './car-type/car-type.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { DonateComponent } from './donate/donate.component';
     TrainingComponent,
     MediaComponent,
     DonateComponent,
+    TentTypeComponent,
+    CarTypeComponent,
     
   ],
   imports: [

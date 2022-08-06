@@ -7,12 +7,24 @@
     <li (click)="toggle()" class="whoweare">
         <a routerLink="/whoweare">Who we are</a>
     </li>
+
     <li class="action">
         
         <a (click)="drop_method()">Action <fa-icon [icon]="['fas', 'angle-down']"></fa-icon></a>
         <ul class="action_ul" [class.action_drop]="drop"> 
             <li (click)="toggle()" routerLink="/training">Training and medical supply project</li>
-            <li (click)="toggle()" routerLink="/surgical">Forward Surgical Team / Mobile surgical team</li>
+            <li class="surgical">
+                <a (click)="drop_surgical()">
+                    Forward Surgical Team / Mobile surgical team <fa-icon [icon]="['fas', 'angle-down']"></fa-icon>
+                </a>
+
+                <ul [class.surgical_toggle]="surgical_drop">
+                    <li>Frontline Surgical</li>
+                    <li>Tent Type Operation</li>
+                    <li>Car Type Operation</li>
+                </ul>
+                
+            </li>
             <li (click)="toggle()">Primary Health Care to IDPs & civilians</li>
         </ul>
     </li>

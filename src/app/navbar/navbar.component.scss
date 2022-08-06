@@ -43,7 +43,6 @@
         }
     }
 
-
     li.nav-logo a {
         width: 70%;
         margin: auto;
@@ -82,6 +81,7 @@
             z-index: 1000;
             max-height: 0px;
             overflow: hidden;
+            padding-left: 10px;
             transition: max-height 0.1s ease-in-out;
             li {
                 width: 100%;
@@ -92,7 +92,40 @@
         }
 
         ul.action_drop {
-            max-height: 200px;
+            max-height: 400px;
+        }
+
+
+        li.surgical {
+            a {
+                padding-left: 0;
+
+                fa-icon  {
+                    float: none;
+                }
+            }
+
+            ul {
+                background-color: white;
+                text-align: center;
+                padding: 0;
+                max-height: 0px;
+                overflow: hidden;
+                transition: max-height 0.1s ease-in-out;
+
+                li {
+                    border-bottom: 1px solid black;
+
+                    span {
+                        float: right;
+                        margin-right: 40px;
+                    }
+                }
+            }
+
+            ul.surgical_toggle {
+                max-height: 200px;
+            }
         }
     }
 
