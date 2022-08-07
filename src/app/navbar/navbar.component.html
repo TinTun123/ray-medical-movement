@@ -12,16 +12,25 @@
         
         <a (click)="drop_method()">Action <fa-icon [icon]="['fas', 'angle-down']"></fa-icon></a>
         <ul class="action_ul" [class.action_drop]="drop"> 
-            <li (click)="toggle()" routerLink="/training">Training and medical supply project</li>
+            <li class="surgical" (click)="train_toggle()" >
+                <a>
+                    Training and medical supply project<fa-icon [icon]="['fas', 'angle-down']"></fa-icon>
+                </a>
+                <ul [class.train_toggle]="train_drop">
+                    <li routerLink="/training">First aid training/ Emergency trauma care training</li>
+                    <li routerLink="/medic">Medic Training</li>
+                </ul>
+            </li>
             <li class="surgical">
+                
                 <a (click)="drop_surgical()">
                     Forward Surgical Team / Mobile surgical team <fa-icon [icon]="['fas', 'angle-down']"></fa-icon>
                 </a>
 
                 <ul [class.surgical_toggle]="surgical_drop">
-                    <li>Frontline Surgical</li>
-                    <li>Tent Type Operation</li>
-                    <li>Car Type Operation</li>
+                    <li routerLink="/surgical">Frontline Surgical</li>
+                    <li routerLink="/tent-type">Tent Type Operation</li>
+                    <li routerLink="/car-type">Car Type Operation</li>
                 </ul>
                 
             </li>

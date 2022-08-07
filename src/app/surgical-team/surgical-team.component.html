@@ -78,19 +78,14 @@
     <div class="experience">
         <h3>{{language === 'mu' ? h2[0] : h2[1]}}</h3>
 
-        
-        <p [class.mm]="language === 'mm'">
-            {{language === 'mu' ? para02[0] : para02[1]}} 
-        </p>
-
-        <div class="training-img container-fluid p-4 mt-4 mb-4">
+        <div class="training-img exp-img container-fluid p-4 mt-4 mb-4 p-md-0 m-md-0">
             <div class="row">
     
                 <div class="img col-md-5 offset-md-1">
                     <img src="../../assets/image/operation.jpg" alt="">
                 </div>
 
-                <div class="content col-md-5">
+                <div class="content">
                     <p>
                         {{language === 'mu' ? para10[0] : para10[1]}} 
                     </p>
@@ -98,8 +93,14 @@
                 </div>
 
             </div>
-    
+
         </div>
+        
+        <p [class.mm]="language === 'mm'">
+            {{language === 'mu' ? para02[0] : para02[1]}} 
+        </p>
+
+
         
 
         
@@ -107,37 +108,20 @@
             {{language === 'mu' ? para03[0] : para03[1]}} 
         </p>
 
-        <div class="training-img container-fluid p-4 mt-4 mb-4">
-            <div class="row">
-    
-                <div class="content col-md-5 offset-md-1">
-                    <p>
-                        {{language === 'mu' ? para04[0] : para04[1]}} 
-                    </p>
-                    
-                </div>
-    
-                <div class="img col-md-5">
-                    <img src="../../assets/image/burned_house.jpg" alt="">
-                </div>
-    
-            </div>
-    
-        </div>
 
         
         <p [class.mm]="language === 'mm'">
             {{language === 'mu' ? para05[0] : para05[1]}} 
         </p>
 
-        <div class="training-img container-fluid p-4 mt-4 mb-4">
+        <!-- <div class="training-img exp-img container-fluid p-4 mt-4 mb-4">
             <div class="row">
 
                 <div class="img  offset-md-1 col-md-5">
                     <img src="../../assets/image/fleeding.jpg" alt="">
                 </div>
 
-                <div class="content col-md-5">
+                <div class="content">
                     <p>
                         {{language === 'mu' ? para06[0] : para06[1]}}
                     </p>
@@ -145,14 +129,14 @@
     
             </div>
     
-        </div>
+        </div> -->
 
 
         <p [class.mm]="language === 'mm'">
             {{language === 'mu' ? para07[0] : para07[1]}}
         </p>
 
-        <div class="training-img container-fluid p-4 mt-4 mb-4">
+        <!-- <div class="training-img exp-img container-fluid p-4 mt-4 mb-4">
             <div class="row">
                 <div class="content col-md-5 offset-md-1">
                     <p>
@@ -167,8 +151,7 @@
 
     
             </div>
-    
-        </div>
+        </div> -->
     </div>
     <h3>Mobile Tent type operation Theatre</h3>
     
@@ -178,7 +161,7 @@
                 <div class="img1 col-12 mb-4 col-md-4 p-md-3">
                     <div class="content">
                         <p>{{language === 'mu' ? imgcont[0] : imgcont[1]}}
-                            <a routerLink="/sorry" class="btn btn-outline-light">See more</a>
+                            <a routerLink="/tent-type" class="btn btn-outline-light">See more</a>
                         </p>
                         
                     </div>
@@ -193,7 +176,7 @@
                     <div class="content">
                         <p>
                             {{language === 'mu' ? imgcont02[0] : imgcont02[1]}}
-                            <a routerLink="/sorry" class="btn btn-outline-light">See more</a>
+                            <a routerLink="/tent-type" class="btn btn-outline-light">See more</a>
                         </p>
                     </div>
     
@@ -209,7 +192,7 @@
                     <div class="content">
                         <p>
                             {{language === 'mu' ? imgcont03[0] : imgcont03[1]}}
-                            <a routerLink="/sorry" class="btn btn-outline-light">See more</a>
+                            <a routerLink="/tent-type" class="btn btn-outline-light">See more</a>
                         </p>
                     </div>
     
@@ -222,7 +205,7 @@
                     <div class="content">
                         <p>
                             {{language === 'mu' ? imgcont04[0] : imgcont04[1]}}
-                            <a routerLink="/sorry" class="btn btn-outline-light">See more</a>
+                            <a routerLink="/tent-type" class="btn btn-outline-light">See more</a>
                         </p>
                     </div>
     
@@ -243,7 +226,7 @@
                 <div class="content">
                     <p>
                         {{language === 'mu' ? imgcont05[0] : imgcont05[1]}}
-                        <a routerLink="/sorry" class="btn btn-outline-light">See more</a>
+                        <a routerLink="/car-type" class="btn btn-outline-light">See more</a>
                     </p>
                 </div>
 
@@ -259,7 +242,7 @@
                 <div class="content">
                     <p>
                         {{language === 'mu' ? imgcont06[0] : imgcont06[1]}}
-                        <a routerLink="/sorry" class="btn btn-outline-light">See more</a>
+                        <a routerLink="/car-type" class="btn btn-outline-light">See more</a>
                     </p>
                 </div>
 
@@ -272,7 +255,7 @@
                 <div class="content">
                     <p>
                         {{language === 'mu' ? imgcont07[0] : imgcont07[1]}}
-                        <a routerLink="/sorry" class="btn btn-outline-light">See more</a>
+                        <a routerLink="/car-type" class="btn btn-outline-light">See more</a>
                     </p>
                 </div>
 
@@ -284,7 +267,7 @@
             <div class="img1 col-12 mb-4 col-md-4 p-md-3">
                 <div class="content">
                     <p>{{language === 'mu' ? imgcont08[0] : imgcont08[1]}}
-                        <a routerLink="/sorry" class="btn btn-outline-light">See more</a>
+                        <a routerLink="/car-type" class="btn btn-outline-light">See more</a>
                     </p>
                     
                 </div>

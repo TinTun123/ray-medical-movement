@@ -97,20 +97,47 @@
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1200px) {
     .surgical {
         // p.mm {
         //     line-height: 30px;
         // }
         font-size: 20px;
         .experience {
+            .exp-img {
+                display: block;
+                float: right;
+                margin: 0;
+                padding: 0;
+                width: 500px;
+                
+
+                .row {
+                    display: block;
+                    
+                    .img {
+                        display: block;
+                        width: 100%;
+                        margin: 0;
+                    }
+
+                    .content {
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+
+
+            }
             .training-img {
-                background-color: rgba(0, 0, 0, 1);
+                background-color: rgba(0, 0, 0, 0.499);
+
+                .row {
+                    display: block;
+                }
                 // position: none;
 
                 .content {
-                    position:relative;
-                    background: none;
                     // width: auto;
                     p {
                         font-size: 30px;
@@ -136,6 +163,9 @@
                         p {
                             font-size: 18px;
                             padding: 1em;
+                            a {
+                                font-size: 18px;
+                            }
                         }
                     }
                     img {
@@ -203,9 +233,12 @@
 @media only screen and (min-width: 600px) {
     .cover {
         margin-top: 72px;
+        background-color: black;
         .imgcarousel {
+            text-align: center;
             img {
                 height: 600px;
+                width: 60%;
             }
         }
     }

@@ -1,0 +1,45 @@
+.container {
+    .row {
+        .firstaid {
+            position: relative;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+
+            p {
+                position: absolute;
+                bottom: 0;
+                left: 13px;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.515);
+                margin: 0;
+                width: 80%;
+                padding: 1em;
+
+                
+                a.btn-outline-dark {
+                    color: white;
+                    border-color: white;
+                }
+            }
+        }
+    }
+}
+
+h4 {
+    border-bottom: 3px solid green;
+    width: 25%;
+    padding: 1em;
+    font-weight: bold;
+    padding-bottom: 16px;
+    padding-left: 0;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    h4 {
+        width: 100%;
+    }
+}

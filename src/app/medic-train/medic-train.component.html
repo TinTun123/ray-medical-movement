@@ -1,0 +1,61 @@
+<div class="training">
+    <div class="vision">
+        <h3>Vision</h3>
+
+        <p [class.mm]="language === 'mm'">{{language === 'mu' ? para01[0] : para01[1]}}</p>
+    </div>
+
+    <div class="mission">
+        <h3>Mission</h3>
+
+        <ol [class.mm]="language === 'mm'">
+            <li *ngFor="let li of language === 'mu' ? para02mu : para02mm">
+                {{li}}
+            </li>
+        </ol>
+    </div>
+
+    <div class="objective">
+        <h2>Objective</h2>
+        <ol>
+            <li *ngFor="let li of language === 'mu' ? para03mu : para03mm">
+                {{li}}
+            </li>
+        </ol>
+    </div>
+
+    <div class="introduction">
+        <h3>Introduction</h3>
+
+        <p [class.mm]="language === 'mm'">{{language === 'mu' ? para04[0] : para04[1]}}</p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row g-3">
+            <div class="img col-12 col-lg-4">
+                <img src="../../assets/image/eye_injury.jpg" alt="">
+                <p>{{language === 'mu' ? imgcnt00[0] : imgcnt00[1]}}</p>
+            </div>
+
+            <div class="img col-12 col-lg-4">
+                <img src="../../assets/image/bandage.jpg" alt="">
+                <p>{{language === 'mu' ? imgcnt01[0] : imgcnt01[1]}}</p>
+            </div>
+
+            <div class="img col-12 col-lg-4">
+                <img src="../../assets/image/evacuation.jpg" alt="">
+                <p>{{language === 'mu' ? imgcnt02[0] : imgcnt02[1]}}</p>
+            </div>
+
+            <div class="img col-12 col-lg-4">
+                <img src="../../assets/image/Teaching.jpg" alt="">
+                <p>{{language === 'mu' ? imgcnt03[0] : imgcnt03[1]}}</p>
+            </div>
+
+            <!-- <div class="img col-12 col-lg-4">
+                <img src="../../assets/image/tourniquet.jpg" alt="">
+                <p>{{language === 'mu' ? imgcnt04[0] : imgcnt04[1]}}</p>
+            </div> -->
+        </div>
+    </div>
+</div>

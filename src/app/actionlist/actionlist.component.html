@@ -1,0 +1,43 @@
+<app-cover></app-cover>
+<h4>Training and medical supply project</h4>
+<div class="container">
+    
+    <div class="row g-3 mt-2 mb-2">
+        
+        <div class="firstaid col-12 col-md-4">
+            <img src="../../assets/image/tourniquet.jpg" alt="">
+
+            <p [class.mm]="language === 'mm'">{{language === 'mu' ? cnt00[0] : cnt00[1]}} <a class="btn btn-outline-dark" routerLink="/training">See more</a></p>
+        </div>
+
+        <div class="firstaid col-12 col-md-4">
+            <img src="../../assets/image/bandage.jpg" alt="">
+
+            <p [class.mm]="language === 'mm'">{{language === 'mu' ? cnt01[0] : cnt01[1]}} <a class="btn btn-outline-dark" routerLink="/medic">See more</a></p>
+        </div>
+    </div>
+</div>
+
+<h4>Forward Surgical Team / Mobile surgical team</h4>
+
+<div class="container">
+    <div class="row mt-2 mb-2 g-3">
+        <div class="firstaid col-12 col-md-4">
+            <img src="../../assets/image/surgical.jpg" alt="">
+
+            <p [class.mm]="language === 'mm'">{{language === 'mu' ? cnt02[0] : cnt02[1]}} <a class="btn btn-outline-dark" routerLink="/surgical">See more</a></p>
+        </div>
+
+        <div class="firstaid col-12 col-md-4">
+            <img src="../../assets/image/tent-type01.jpg" alt="">
+
+            <p [class.mm]="language === 'mm'">{{language === 'mu' ? cnt03[0] : cnt03[1]}} <a class="btn btn-outline-dark" routerLink="/tent-type">See more</a></p>
+        </div>
+        
+        <div class="firstaid col-12 col-md-4">
+            <img src="../../assets/image/image0.jpg" alt="">
+
+            <p [class.mm]="language === 'mm'">{{language === 'mu' ? cnt04[0] : cnt04[1]}} <a class="btn btn-outline-dark" routerLink="/car-type">See more</a></p>
+        </div>
+    </div>
+</div>

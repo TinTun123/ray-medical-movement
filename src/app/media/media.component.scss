@@ -1,14 +1,20 @@
 .media {
     margin-top: 115px;
-    font-size: 14px;
+    font-size: px;
     div.content {
         font-family: "PT Sans Pro", pt-sans-pro, "Sans Serif";
         p {
             text-indent: 60px;
             line-height: 27px;
+            font-size: 16px;
             a {
                 text-decoration: none;
             }
+        }
+
+        p.indent {
+            text-indent: 30px;
+            line-height: 30px;
         }
     }
 
@@ -42,7 +48,7 @@
 
         div.content {
             p {
-                font-size: 16px;
+                font-size: 20px;
             }
         }
     }

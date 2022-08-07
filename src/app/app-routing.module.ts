@@ -7,6 +7,10 @@ import { TrainingComponent } from './training/training.component';
 import { WhoweareComponent } from './whoweare/whoweare.component';
 import { MediaComponent } from './media/media.component';
 import { DonateComponent } from './donate/donate.component';
+import { TentTypeComponent } from './tent-type/tent-type.component';
+import { MedicTrainComponent } from './medic-train/medic-train.component';
+import { ActionlistComponent } from './actionlist/actionlist.component';
+import { CarTypeComponent } from './car-type/car-type.component';
 
 const routes: Routes = [
   {path: "sorry", component: SorryComponent},
@@ -16,6 +20,12 @@ const routes: Routes = [
   {path: "training", component : TrainingComponent},
   {path: "media", component : MediaComponent},
   {path: "donate", component : DonateComponent},
+  {path: "tent-type", component : TentTypeComponent},
+  {path: "training", component : TrainingComponent},
+  {path : "medic", component : MedicTrainComponent},
+  {path : "action", component : ActionlistComponent},
+  {path : "tent-type", component : TentTypeComponent},
+  {path : "car-type", component : CarTypeComponent},
   {path : "", redirectTo : "/home", pathMatch : 'full'}
 ];
 

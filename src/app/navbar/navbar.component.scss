@@ -77,6 +77,7 @@
         
         ul.action_ul {
             width: 500px;
+            height: auto;
             background-color: white;
             z-index: 1000;
             max-height: 0px;
@@ -92,30 +93,33 @@
         }
 
         ul.action_drop {
-            max-height: 400px;
+            max-height: 600px;
         }
 
 
         li.surgical {
+            height: auto;
             a {
                 padding-left: 0;
+                text-align: left;
 
                 fa-icon  {
-                    float: none;
+                    float: right;
                 }
             }
 
             ul {
                 background-color: white;
-                text-align: center;
+                text-align: left;
                 padding: 0;
                 max-height: 0px;
+                height: auto;
                 overflow: hidden;
                 transition: max-height 0.1s ease-in-out;
 
                 li {
                     border-bottom: 1px solid black;
-
+                    padding-left: 20px;
                     span {
                         float: right;
                         margin-right: 40px;
@@ -124,6 +128,10 @@
             }
 
             ul.surgical_toggle {
+                max-height: 200px;
+            }
+
+            ul.train_toggle {
                 max-height: 200px;
             }
         }
@@ -170,7 +178,7 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
         .navbaro {
             display: flex;
             flex-direction: column;
@@ -279,6 +287,16 @@
                         font-size: 14px;
                         border-bottom: 1px solid black;
                         
+                    }
+                }
+
+                li.surgical {
+                    a {
+                        fa-icon {
+                            float: none;
+                            margin-left: 10px;
+                            margin-right: 0 ;
+                        }
                     }
                 }
                 

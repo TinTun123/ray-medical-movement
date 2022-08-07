@@ -23,6 +23,10 @@ import { MediaComponent } from './media/media.component';
 import { DonateComponent } from './donate/donate.component';
 import { TentTypeComponent } from './tent-type/tent-type.component';
 import { CarTypeComponent } from './car-type/car-type.component';
+import { MedicTrainComponent } from './medic-train/medic-train.component';
+import { FirstaidTrainComponent } from './firstaid-train/firstaid-train.component';
+import { ActionlistComponent } from './actionlist/actionlist.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +45,10 @@ import { CarTypeComponent } from './car-type/car-type.component';
     DonateComponent,
     TentTypeComponent,
     CarTypeComponent,
+    MedicTrainComponent,
+    FirstaidTrainComponent,
+    ActionlistComponent,
+    NavComponent,
     
   ],
   imports: [
