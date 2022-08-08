@@ -1,0 +1,38 @@
+.nav_ {
+    position: relative;
+    
+    .parent {
+        padding: 3em;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.96);
+        color: white;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                margin: 1em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .nav_ {
+        .parent {
+            padding: 0.6em;
+
+            h5 {
+                font-size: 14px;
+            }
+
+            ul {
+                li {
+                    font-size: 12px;
+                    margin: 0.9em;
+                }
+            }
+        }
+    }
+}

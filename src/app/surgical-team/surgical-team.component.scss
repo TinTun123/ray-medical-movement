@@ -6,50 +6,31 @@
         text-indent: 40px;
     }
     .experience {
+
         .training-img {
-            
-            padding: 0;
+            float: right;
             position: relative;
-            // display: flex;
-            // flex-direction: row;
-            // justify-content: space-around;
-            // .row {
-            //     height: 200px;
-            // }
-    
-            .content {
-                
-             
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                color: white;
-                position: absolute;
-                bottom: 24px;
-                // width: 60%;
-                background-color: rgba(0, 0, 0, 0.5);
-    
-                p {
-                    margin: 0;
-                    font-size: 10px;
-                    
-                }
-            }
-    
+            width: 50%;
             .img {
-                // width: 100%;
-                // height: 100%; 
-                display: flex;
-                align-items: center;
                 img {
                     display: block;
                     width: 100%;
-                    // height: 60%;
                 }
-    
+
+                p {
+                    color: white;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.436);
+                    margin: 0;
+                    padding: 0.5em;
+                    font-size: 10px;
+                }
             }
         }
     }
+
 
     div.tent-type {
         div.img1 {
@@ -103,55 +84,16 @@
         //     line-height: 30px;
         // }
         font-size: 20px;
+
         .experience {
-            .exp-img {
-                display: block;
-                float: right;
-                margin: 0;
-                padding: 0;
-                width: 500px;
-                
-
-                .row {
-                    display: block;
-                    
-                    .img {
-                        display: block;
-                        width: 100%;
-                        margin: 0;
-                    }
-
-                    .content {
-                        bottom: 0;
-                        right: 0;
-                    }
-                }
-
-
-            }
             .training-img {
-                background-color: rgba(0, 0, 0, 0.499);
-
-                .row {
-                    display: block;
-                }
-                // position: none;
-
-                .content {
-                    // width: auto;
-                    p {
-                        font-size: 30px;
-                        color: white;
-                    }
-                }
-
-                .img {
-                    img {
-                        // width: 100%;
-                    }
-                }
+                width: 20%;
+                margin: 1em;
             }
         }
+
+
+        
 
         div.tent-type {
             .row {
@@ -176,26 +118,10 @@
                 }
             }
         }
+    
     }
 }
 
-
-@media only screen and (max-width: 600px) {
-    .surgical {
-        .experience {
-            .training-img {
-                .content {
-                    width: 70%;
-                    left: 23%;
-
-                    p {
-                        padding: 1em;
-                    }
-                }
-            }
-        }
-    }
-}
 
 .cover {
     // position: relative;
@@ -207,30 +133,10 @@
         height: 400px;
     }
 
-//     .content {
-//         position: absolute;
-//         color: white;
-//         width: 40%;
-//         height: 30%;
-//         background-color: rgba($color: #000000, $alpha: 0.4);
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         vertical-align: middle;
-//         bottom: 6px;
-
-//         h3 {
-//             margin: 0;
-//             width: 100%;
-            
-//             text-align: center;
-//         }
-
-//     }
     
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1200px) {
     .cover {
         margin-top: 72px;
         background-color: black;

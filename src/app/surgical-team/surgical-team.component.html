@@ -1,3 +1,4 @@
+
 <div class="cover">
     <!-- <div class="content">
         <h3>Forward Surgical Team</h3>
@@ -57,7 +58,7 @@
 
     
 </div>
-
+<app-nav></app-nav>
 <div class="surgical">
     <div class="about">
         <h3>{{language === 'mu' ? h1[0] : h1[1]}}</h3>
@@ -78,22 +79,13 @@
     <div class="experience">
         <h3>{{language === 'mu' ? h2[0] : h2[1]}}</h3>
 
-        <div class="training-img exp-img container-fluid p-4 mt-4 mb-4 p-md-0 m-md-0">
-            <div class="row">
-    
-                <div class="img col-md-5 offset-md-1">
-                    <img src="../../assets/image/operation.jpg" alt="">
-                </div>
-
-                <div class="content">
-                    <p>
-                        {{language === 'mu' ? para10[0] : para10[1]}} 
-                    </p>
-                    
-                </div>
-
+        <div class="training-img">
+            <div class="img">
+                <img src="../../assets/image/operation.jpg" alt="">
+                <p>
+                    {{language === 'mu' ? para10[0] : para10[1]}} 
+                </p>
             </div>
-
         </div>
         
         <p [class.mm]="language === 'mm'">
