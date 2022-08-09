@@ -8,8 +8,10 @@ import { LanguageService } from '../language.service';
 })
 export class WhoweareComponent implements OnInit {
 
-  constructor(private languageService : LanguageService) { }
-  language : string = 'mu';
+  constructor(private languageService : LanguageService) {
+
+    console.log("wwr constructor run");
+   }
   para01 : string[] = [
     `“From the medical movement towards the better health care system and save lives”`,
     `“ကျန်းမာခြင်းအရွေ့မှသည် ကောင်းသောစနစ်ကိုဦးတည်၍ အသက်ပေါင်းများစွာကိုကယ်တင်မည်။”`
@@ -49,9 +51,12 @@ export class WhoweareComponent implements OnInit {
     `ယခင်က ရှေ့တန်းစစ်မြေပြင် (Role 1) ကဏ္ဍဦးစားပေး လုပ်ကိုင်ခဲ့သည်။ အရေးပေါ်အသက်ကယ်ခြင်းလုပ်ငန်းများမှာ အရေးပါအရာရောက်ပြီး မရှိမဖြစ်လိုအပ်ကြောင်းသိရှိလာကြပြီဖြစ်သည်။ ဒေသခံပြည်သူများနှင့်ရဲဘော်များမှာ လေ့လာသင်ယူမှုအားကောင်းလာသလို သင်တန်းပိုချသောဆရာဆရာမများလည်း ယခင်ထက်ပိုမိုများလာသည်ကိုတွေ့ရှိရသည်။ လူနာကိုအသက်ဆွဲဆန့်မှုနှင့် ယခင်ထက်ပိုမိုစနစ်ကျသော လူနာလွှပြောင်းခြင်းများကိုတွေ့ရှိလာရသည်။ သိုသော် နောက်တန်းဆေးရုံ (Role 3) သိုပိုဆောင်စဉ် လမ်းခရီးအကွာအဝေး၊ အခက်အခဲနှင့် တိုက်ပွဲမှကယ်ထုတ်စဉ်အချိန်ကြာမြင့်သွားခြင်းနှင့် ဒဏ်ရာပြင်းထန်မှု စသောအချက်တိုကြောင့် ဆေးရုံထိမရောက်ပဲ အသက်ဆုံးရှုးမှုများကိုတွေ့ရသည်။ ထိုRole 2 ကဏ္ဍကွက်လပ်ကိုဖြည့်၍ အချိန်ဆွဲဆန့်အသက်ကယ်ခြင်း (Resuscitation & timely surgical intervention) ပြုလုပ်ရန်ကြိုးပန်းခဲ့ကြခြင်းဖြစ်သည်။ ထိုကြောင့် Forward/ Mobile Surgical team ရွေ့လျားခွဲခန်းလုပ်ငန်းများကို 1st Jan, 2022 မှစတင်၍ လုပ်ဆောင်ခဲ့ကြပါသည်။`
   ]
 
- 
+ language : string = this.languageService.get_lan();
   ngOnInit(): void {
-    this.languageService.subject.subscribe((res : any) => this.change_lan(res));
+   
+    this.languageService.subject.subscribe((res : any) => { 
+      this.change_lan(res)
+    });
   }
 
   change_lan(lan : any) : void {

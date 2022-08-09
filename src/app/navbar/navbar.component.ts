@@ -47,6 +47,7 @@ export class NavbarComponent implements OnInit {
 
   change_lan(lan : string) : void {
     this.language_toggle();
+
     this.language.change_lan(lan);
    
     

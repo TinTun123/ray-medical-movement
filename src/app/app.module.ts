@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AdsenseModule } from 'ng2-adsense';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -55,7 +56,8 @@ import { NavComponent } from './nav/nav.component';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    NgbModule
+    NgbModule,
+    AdsenseModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

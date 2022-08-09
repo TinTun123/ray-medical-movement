@@ -26,7 +26,7 @@ export class CardListComponent implements OnInit {
     `Ongoing projects 1. Training and medical supply project  (a) First aid Training & First aid kits supply  (b) Medic Training and medic back pack supply  (c) Trauma Refresher Courses for doctor and nurses & medical equipment supply 2. Forward Surgical Team/ Mobile surgical team project 3. Primary Health Care to IDPs & civilians`,
     `1. အရေးပေါ်အသက်ကယ်သင်တန်းများပေးခြင်းနှင့် အရေးပေါ်ဆေးအိတ်ထောက်ပံ့ခြင်း။  2. တပ်ရင်းတပ်ဖွဲများတွင် ဆေးတပ်များပေါ်ပေါက်၍ အင်အားပိုမိုကောင်းမွန်လာစေရန် ဆေးတပ်သင်တန်းပေးခြင်းနှင့် ဆေးအိတ်များထောက်ပံ့ပေးခြင်း။ 3. ဆရာဝန်သူနာပြုတိုအတွက် ထိခိုက်ဒဏ်ရာပြန်လည်လေ့ကျင့်ခြင်းသင်တန်းနှင့် လိုအပ်သောဆေးပစ္စည်းများထောက်ပံ့ခြင်း။  4. ရှေ့တန်းခွဲစိတ်ကုသရေးအဖွဲ။`
   ]
-  language : string = "mu";
+  language : string = this.languageService.get_lan();
 
   
 

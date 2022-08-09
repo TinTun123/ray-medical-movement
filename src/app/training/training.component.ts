@@ -72,7 +72,7 @@ export class TrainingComponent implements OnInit {
   ]
 
   constructor(private languageService : LanguageService) { }
-  language : string = 'mu';
+  language : string = this.languageService.get_lan();
   ngOnInit(): void {
     this.languageService.subject.subscribe((lan) => {
       this.change_lan(lan);

@@ -15,9 +15,11 @@ export class SurgicalTeamComponent implements OnInit {
     config.wrap = true;
     config.keyboard = false;
     config.pauseOnHover = true;
+
+    this.languageService.subject.subscribe((res : any) => this.change_lan(res));
    }
 
-  language : string = 'mu';
+  language : string = this.languageService.get_lan();
   para01 : string[] = [
     `After being repeated attacks to surgical units, moving things here and there and modification of subcentre clinics and native houses into operation theatre became difficult. We tried to build OT in a place near front line but have to leave when the location was known and targetedly attacked. Feeling of insecureness made health care workers unsafe and moved to the places where the motar shellings are unreachable. But, thoses places are far enough from the incident places about 1-2 hour drive and some even 3-4 hr drive. Considering the time of evacuation from battle field as 1 hr, life threatening injured patients are unable to get to the hospital and some even died on the way to hospital. Mobile surgical unit become the only solution for timely surgical interventions and save lives`,
     `ခွဲစိတ်ကုသနိုင် တဲ့ ခွဲခန်းနေရာဌာနတွေကိုလေယာဥ်၊လက်နက်ကြီး စသည်တိုဖြင့် ခနခန အတိုက်ခိုက်ခံရပြီးနောက်မှာ  ဆေးပစွည်းများ၊ဆေးခန်းများ ဟာ တစ်နေရာမှ နောက်ထပ် လုံခြုံနိုင်တဲ့နေရာတွေကို ပြောင်းရွေ့ခဲ့ကြရသည် ။ တိုက်ပွဲနှင့် အနီးအနား မှာ ခွဲခန်းတစ်ခုကို လုပ်ဖိုကြိုးစားပေမယ့်လည်း မ ကြာခနဆိုသလိုနေရာပေါက်ပြီး တိုက်ခိုက် ခံလာရတဲ့အခါမှာ   ရှေ့တန်း နေရာတွေကို စွန့်ခွာခဲ့ကြရတယ်။sub center ဆေးခန်းတွေ၊ ပြည်သူ့အိုးအိမ်တွေကိုအသုံးပြု ဖိုလည်းရွာသူ၊ရွာသားတွေရဲ့လုံခြုံရေးကို ငဲ့ကွက်သောအားဖြင့် ခွဲခန်းနေရာရရှိဖို ခက်ခဲလာခဲ့တယ်။ကျန်းမာရေး ဝန်ထမ်းတွေမှာ စိတ်မလုံခြုံမူတွေဖြစ်လာတဲ့အခါ လက်နက်ကြီးကျတဲ့နေရာတွေနဲ့ ဝေးတဲ့ နေရာတွေကို ရောက်သွားစေခဲ့တယ် ။ ဆေးရုံ၊ဆေးခန်းတွေကို ပြန်လည်  စတင်နိုင်ခဲ့ပေမယ့်  ဒဏ်ရာရရှိတဲ့ရဲဘော်တွေကို ပိုဆောင်တဲ့အခါ  တိုက်ပွဲဖြစ်ပွားရာနေရာမှ ၁ နာရီ ၂နာရီလောက်သွားရတယ်။တချိုနေရာတွေဆို ၃ ၄နာရီလောက်ထိ သွားရတာမျိူးတွေထိရှိပါတယ်။တိုက်ပွဲကနေ ကယ်ထုတ်တဲ့အချိန်ကလည်း ခန့်မှန်းခြေ ၁နာရီလောက်ကြာမြင့် နိုင်တာကြောင့် အသက်အန္တာရယ် စိုးရိမ်ရတဲ့လူနာတွေဟာ ဆေးရုံ အထိ မရောက်နိုင်ခဲ့ကြဘူး။ဒဏ်ရာပြင်းထန်တဲ့ရဲဘော်တချိုကတော့ဆေးရုံဆေးခန်းသွားရာ လမ်းပေါ်မှာ သေဆုံးခဲ့ ကြတယ်။ဒါကြောင့်ရွေ့လျားခွဲခန်းနဲ့  ခွဲစိတ်ကုသရေးအဖွဲ ကအချိန်မှီခွဲစိတ်ပြီး အသက်ကယ်နိုင်ဖိုအတွက် တစ်ခုတည်းသော အဖြေ ဖြစ်လာခဲ့တယ်။`
@@ -131,10 +133,12 @@ export class SurgicalTeamComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.languageService.subject.subscribe((res : any) => this.change_lan(res));
+    
   }
 
   change_lan(lan : any) {
+    console.log(lan);
+    
     this.language = lan;
   }
 

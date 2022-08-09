@@ -9,12 +9,16 @@ export class LanguageService {
 
   constructor() { }
 
-  language : string = 'mu';
+  language : string = 'mm';
 
   public subject = new Subject();
 
   change_lan(lan : string) : void {
     this.subject.next(lan);
+    // console.log(this.language);
+    this.language = lan;
+
+    
   }
 
   get_lan() : string {

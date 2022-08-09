@@ -180,138 +180,176 @@
 
 @media only screen and (max-width: 1200px) {
         .navbaro {
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            max-height: 5em;
-            width: 100%;
-            transition: max-height 0.2s;
-            background-color: white;
 
             li {
-                width: 90%;
-                height: 40%;
-                margin: auto;
-                
-                a {
-                    text-align: left;
-                    
-                    opacity: 0.7;
-                    border-bottom: 0.5px solid black;
-                    padding: 0px 0px 0px 7px;
-                    color: black;
-
-                    img {
-                        display: block;
-                        margin: 0;
-                    }
-                    
-                }
-
-
-                a:hover {
-                    opacity: 1;
-                  
-                }
-
+                font-size: 10px;
+                width: 20%;
             }
-
-            li:first-child a {
-                border: none;
-            }
-
-            li.toggle {
-                display: block;
-                position: absolute;
-                width: 50px;
-                height: 60px;
-                line-height: 60px;
-                
-                top: 20px;
-                right: 0;
-                color: blue;
-                opacity: 0.7;
-                transition: transform 0.5s;
-                font-size: x-large;
-            }
+            display: flex;
+            flex-direction: row;
             
-
-            li.donate {
-                // display: none;
-                a {
-                    background: none;
-                    border: none;
-                    border-bottom: 1px solid black;
-                }
-            }
-
-
-            li.toggle.click {
-                opacity: 1;
-                transform: rotate(45deg);
-            }
-
-            li.nav-logo a:hover {
-                border-bottom: none;
-            }
-
-
-            li.nav-logo {
-                top: 15px;
-            }
-
-
-            li.nav-logo a {
-                margin-left: 0;
-                opacity: 1;
-                
-
-                img {
-                    display: block;
-                    width: 65px;
-                    height: 65px;
-                    border: none;
-                }
-            }
-
-            li.action {
-
-                fa-icon {
-                    color: blue;
-                    float: right;
-                }
-
-                ul.drop {
-                    li {
-                        text-align: left;
-                        font-size: 14px;
-                        border-bottom: 1px solid black;
-                        
-                    }
-                }
-
-                li.surgical {
+//             overflow: hidden;
+//             max-height: 5em;
+//             width: 100%;
+//             transition: max-height 0.2s;
+//             background-color: white;
+         
+                li.nav-logo {
+                    // top: 15px;
+                    
+    
                     a {
-                        fa-icon {
-                            float: none;
-                            margin-left: 10px;
-                            margin-right: 0 ;
+                        margin: 0;
+                        width: 100%;
+                        img {
+                            margin: 0;
+                            width: 100%;
+                            padding: 7px;
                         }
                     }
                 }
+
+//             li {
+//                 width: 90%;
+//                 height: 40%;
+//                 margin: auto;
+                
+//                 a {
+//                     text-align: left;
+                    
+//                     opacity: 0.7;
+//                     border-bottom: 0.5px solid black;
+//                     padding: 0px 0px 0px 7px;
+//                     color: black;
+
+//                     img {
+//                         display: block;
+//                         margin: 0;
+//                     }
+                    
+//                 }
+
+
+//                 a:hover {
+//                     opacity: 1;
+                  
+//                 }
+
+            }
+
+
+//             li:first-child a {
+//                 border: none;
+//             }
+
+//             li.toggle {
+//                 display: block;
+//                 position: absolute;
+//                 width: 50px;
+//                 height: 60px;
+//                 line-height: 60px;
+                
+//                 top: 20px;
+//                 right: 0;
+//                 color: blue;
+//                 opacity: 0.7;
+//                 transition: transform 0.5s;
+//                 font-size: x-large;
+//             }
+            
+
+//             li.donate {
+//                 // display: none;
+//                 a {
+//                     background: none;
+//                     border: none;
+//                     border-bottom: 1px solid black;
+//                 }
+//             }
+
+
+//             li.toggle.click {
+//                 opacity: 1;
+//                 transform: rotate(45deg);
+//             }
+
+//             li.nav-logo a:hover {
+//                 border-bottom: none;
+//             }
+
+
+
+
+
+            // li.nav-logo a {
+//                 margin-left: 0;
+                    
+//                 opacity: 1;
+                
+
+//                 img {
+//                     display: block;
+//                     width: 65px;
+//                     height: 65px;
+//                     border: none;
+//                 }
+            // }
+
+            li.action {
+  
+                #acticon {
+                    color: blue;
+                    // float: right;
+                    margin: 0;
+                }
+
+                .action_ul {
+                    .surgical {
+                        a {
+                            #triicon,
+                            #suricon {
+                                float: none;
+                                margin-right: 0;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+
+//                 ul.drop {
+//                     li {
+//                         text-align: left;
+//                         font-size: 14px;
+//                         border-bottom: 1px solid black;
+                        
+//                     }
+//                 }
+
+//                 li.surgical {
+//                     a {
+//                         fa-icon {
+//                             float: none;
+//                             margin-left: 10px;
+//                             margin-right: 0 ;
+//                         }
+//                     }
+//                 }
                 
             }
 
             li.language {
-                
-                    fa-icon {
-                        margin-right: 40px;
+                    #lanicon {
+                        margin: 0;
+                        float: none;
                         color: blue;
                     }
+        
 
                     ul {
                         max-height: 0px;
+                        width: 140px;
                         li {
+                            width: 100%;
                             span {
                                 margin: 0;
                             }
@@ -322,24 +360,24 @@
 
 
             
-        }  
-        .navbaro.click {
-            max-height: 50em;
-        }
+//         }  
+//         .navbaro.click {
+//             max-height: 50em;
+//         }
 
-        // li.drop {
+//         // li.drop {
 
-        //     text-align: left;
-        //     font-size: 14px;
+//         //     text-align: left;
+//         //     font-size: 14px;
             
-        //     ul {
-        //         li {
-        //             border-bottom: 1px solid black;
-        //             margin-right: 0;
-        //             text-align: right;
-        //         }
-        //     }
+//         //     ul {
+//         //         li {
+//         //             border-bottom: 1px solid black;
+//         //             margin-right: 0;
+//         //             text-align: right;
+//         //         }
+//         //     }
     
-        // }
+//         // }
 
 }
