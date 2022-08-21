@@ -1,7 +1,67 @@
-<br><br><br>
-<app-nav></app-nav>
-<div class="container">
+
+<div class="cover">
+    <!-- <div class="content">
+        <h3>Forward Surgical Team</h3>
+    </div> -->
+    <div class="imgcarousel">
+        <!-- <img src="../../assets/image/photo_2022-07-16_16-28-43.jpg" alt=""> -->
+        <ngb-carousel *ngIf="images">
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[0]" alt="Random first slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>Mobile car-type operation theatre</h3>
+                <p></p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[1]" alt="Random second slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>Mobile car-type operation theatre</h3>
+                <p></p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[2]"  alt="Random third slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>Interior design of tent-type operation theatre</h3>
+                <p></p>
+              </div>
+            </ng-template>
+
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                  <img [src]="images[3]"  alt="Random third slide">
+                </div>
+                <div class="carousel-caption">
+                  <h3>Stitching wound</h3>
+                  <p></p>
+                </div>
+              </ng-template>
+
+              <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                  <img [src]="images[4]"  alt="Random third slide">
+                </div>
+                <div class="carousel-caption">
+                  <h3>Intra operation for neck injured patient</h3>
+                  <p></p>
+                </div>
+              </ng-template>
+          </ngb-carousel>
+    </div>
+
     
+</div>
+<app-nav></app-nav>
+
+<div class="container">
+    <h1>ရွေ့လျားခွဲခန်းအစ</h1>
     <p class="indent">
         ခွဲစိတ်ကုသနိုင် တဲ့ ခွဲခန်းနေရာဌာနတွေကိုလေယာဥ်၊လက်နက်ကြီး စသည်တိုဖြင့် ခနခန အတိုက်ခိုက်ခံရပြီးနောက်မှာ  ဆေးပစ္စည်းများ၊ ဆေးခန်းများ ဟာ တစ်နေရာမှ နောက်ထပ် လုံခြုံနိုင်တဲ့နေရာတွေကို ပြောင်းရွေ့ခဲ့ကြရသည် ။ တိုက်ပွဲနှင့် အနီးအနား မှာ ခွဲခန်းတစ်ခုကို လုပ်ဖိုကြိုးစားပေမယ့်လည်း မ ကြာခနဆိုသလိုနေရာပေါက်ပြီး တိုက်ခိုက် ခံလာရတဲ့အခါမှာ   ရှေ့တန်း နေရာတွေကို စွန့်ခွာခဲ့ကြရတယ်။ 
     </p>
