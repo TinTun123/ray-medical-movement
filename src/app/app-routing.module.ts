@@ -14,7 +14,7 @@ import { CarTypeComponent } from './car-type/car-type.component';
 
 const routes: Routes = [
   {path: "sorry", component: SorryComponent},
-  {path: "", component : HomeComponent},
+  {path: "home", component : HomeComponent},
   {path: "whoweare", component : WhoweareComponent},
   {path: "surgical", component : SurgicalTeamComponent},
   {path: "training", component : TrainingComponent},
