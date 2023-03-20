@@ -14,7 +14,7 @@ import { CarTypeComponent } from './car-type/car-type.component';
 
 const routes: Routes = [
   {path: "sorry", component: SorryComponent},
-  {path: "home", component : HomeComponent},
+  {path: "", component : HomeComponent},
   {path: "whoweare", component : WhoweareComponent},
   {path: "surgical", component : SurgicalTeamComponent},
   {path: "training", component : TrainingComponent},
@@ -25,8 +25,7 @@ const routes: Routes = [
   {path : "medic", component : MedicTrainComponent},
   {path : "action", component : ActionlistComponent},
   {path : "tent-type", component : TentTypeComponent},
-  {path : "car-type", component : CarTypeComponent},
-  {path : "", redirectTo : "/home", pathMatch : 'full'}
+  {path : "car-type", component : CarTypeComponent}
 ];
 
 @NgModule({
